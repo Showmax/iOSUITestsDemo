@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E78A15D365E82F38DC6F4FF /* Pods_WhereIsMyRick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */; };
 		DB270C702113131B00EE2CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C6F2113131B00EE2CDC /* AppDelegate.swift */; };
 		DB270C722113131B00EE2CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C712113131B00EE2CDC /* ViewController.swift */; };
 		DB270C752113131B00EE2CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB270C732113131B00EE2CDC /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47A3E8BA13F8C543C4E1971E /* Pods-WhereIsMyRick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereIsMyRick.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhereIsMyRick/Pods-WhereIsMyRick.release.xcconfig"; sourceTree = "<group>"; };
+		699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhereIsMyRick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B7FA9A2C253D182F2BE379F /* Pods-WhereIsMyRick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereIsMyRick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereIsMyRick/Pods-WhereIsMyRick.debug.xcconfig"; sourceTree = "<group>"; };
 		DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsMyRick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB270C6F2113131B00EE2CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB270C712113131B00EE2CDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E78A15D365E82F38DC6F4FF /* Pods_WhereIsMyRick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB027E660C228D9E87FBF72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45B1733434293F1EB2496F05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B7FA9A2C253D182F2BE379F /* Pods-WhereIsMyRick.debug.xcconfig */,
+				47A3E8BA13F8C543C4E1971E /* Pods-WhereIsMyRick.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DB270C632113131B00EE2CDC = {
 			isa = PBXGroup;
 			children = (
 				DB270C6E2113131B00EE2CDC /* WhereIsMyRick */,
 				DB270C6D2113131B00EE2CDC /* Products */,
+				45B1733434293F1EB2496F05 /* Pods */,
+				1AB027E660C228D9E87FBF72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB270C7E2113131E00EE2CDC /* Build configuration list for PBXNativeTarget "WhereIsMyRick" */;
 			buildPhases = (
+				0343BCDCFAFDD8A3A88698E2 /* [CP] Check Pods Manifest.lock */,
 				DB270C682113131B00EE2CDC /* Sources */,
 				DB270C692113131B00EE2CDC /* Frameworks */,
 				DB270C6A2113131B00EE2CDC /* Resources */,
@@ -129,6 +154,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0343BCDCFAFDD8A3A88698E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhereIsMyRick-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB270C682113131B00EE2CDC /* Sources */ = {
@@ -278,15 +324,13 @@
 		};
 		DB270C7F2113131E00EE2CDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7FA9A2C253D182F2BE379F /* Pods-WhereIsMyRick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C226648446;
 				INFOPLIST_FILE = WhereIsMyRick/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.WhereIsMyRick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +340,13 @@
 		};
 		DB270C802113131E00EE2CDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A3E8BA13F8C543C4E1971E /* Pods-WhereIsMyRick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C226648446;
 				INFOPLIST_FILE = WhereIsMyRick/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.WhereIsMyRick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
