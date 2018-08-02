@@ -13,6 +13,11 @@
 		DB270C752113131B00EE2CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB270C732113131B00EE2CDC /* Main.storyboard */; };
 		DB270C772113131E00EE2CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB270C762113131E00EE2CDC /* Assets.xcassets */; };
 		DB270C7A2113131E00EE2CDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB270C782113131E00EE2CDC /* LaunchScreen.storyboard */; };
+		DB270C82211335B900EE2CDC /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C81211335B900EE2CDC /* Entities.swift */; };
+		DB270C84211336E600EE2CDC /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C83211336E600EE2CDC /* SearchEngine.swift */; };
+		DB270C86211339AA00EE2CDC /* CollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C85211339AA00EE2CDC /* CollectionManager.swift */; };
+		DB270C8921133C5F00EE2CDC /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C8721133C5E00EE2CDC /* CharacterCell.swift */; };
+		DB270C8A21133C5F00EE2CDC /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB270C8821133C5F00EE2CDC /* CharacterCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		DB270C762113131E00EE2CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB270C792113131E00EE2CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB270C7B2113131E00EE2CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB270C81211335B900EE2CDC /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		DB270C83211336E600EE2CDC /* SearchEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngine.swift; sourceTree = "<group>"; };
+		DB270C85211339AA00EE2CDC /* CollectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionManager.swift; sourceTree = "<group>"; };
+		DB270C8721133C5E00EE2CDC /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		DB270C8821133C5F00EE2CDC /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +89,16 @@
 			isa = PBXGroup;
 			children = (
 				DB270C6F2113131B00EE2CDC /* AppDelegate.swift */,
+				DB270C81211335B900EE2CDC /* Entities.swift */,
+				DB270C83211336E600EE2CDC /* SearchEngine.swift */,
 				DB270C712113131B00EE2CDC /* ViewController.swift */,
+				DB270C85211339AA00EE2CDC /* CollectionManager.swift */,
 				DB270C732113131B00EE2CDC /* Main.storyboard */,
 				DB270C762113131E00EE2CDC /* Assets.xcassets */,
 				DB270C782113131E00EE2CDC /* LaunchScreen.storyboard */,
 				DB270C7B2113131E00EE2CDC /* Info.plist */,
+				DB270C8721133C5E00EE2CDC /* CharacterCell.swift */,
+				DB270C8821133C5F00EE2CDC /* CharacterCell.xib */,
 			);
 			path = WhereIsMyRick;
 			sourceTree = "<group>";
@@ -99,6 +114,7 @@
 				DB270C682113131B00EE2CDC /* Sources */,
 				DB270C692113131B00EE2CDC /* Frameworks */,
 				DB270C6A2113131B00EE2CDC /* Resources */,
+				544B3EB35C2E976654316DD1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +166,7 @@
 				DB270C7A2113131E00EE2CDC /* LaunchScreen.storyboard in Resources */,
 				DB270C772113131E00EE2CDC /* Assets.xcassets in Resources */,
 				DB270C752113131B00EE2CDC /* Main.storyboard in Resources */,
+				DB270C8A21133C5F00EE2CDC /* CharacterCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +191,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		544B3EB35C2E976654316DD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhereIsMyRick/Pods-WhereIsMyRick-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhereIsMyRick/Pods-WhereIsMyRick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -181,6 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB270C86211339AA00EE2CDC /* CollectionManager.swift in Sources */,
+				DB270C82211335B900EE2CDC /* Entities.swift in Sources */,
+				DB270C84211336E600EE2CDC /* SearchEngine.swift in Sources */,
+				DB270C8921133C5F00EE2CDC /* CharacterCell.swift in Sources */,
 				DB270C722113131B00EE2CDC /* ViewController.swift in Sources */,
 				DB270C702113131B00EE2CDC /* AppDelegate.swift in Sources */,
 			);
@@ -330,7 +371,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C226648446;
 				INFOPLIST_FILE = WhereIsMyRick/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.WhereIsMyRick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -346,7 +390,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C226648446;
 				INFOPLIST_FILE = WhereIsMyRick/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.WhereIsMyRick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
