@@ -20,10 +20,25 @@
 		DB270C8A21133C5F00EE2CDC /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB270C8821133C5F00EE2CDC /* CharacterCell.xib */; };
 		DBA7AD8121146BA900137296 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD7F21146BA900137296 /* DetailViewController.swift */; };
 		DBA7AD8221146BA900137296 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA7AD8021146BA900137296 /* DetailViewController.xib */; };
+		DBA7AD92211487B400137296 /* KIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD91211487B400137296 /* KIFTests.swift */; };
+		ECEDE89016AF2306696671EF /* Pods_KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52559AEBB28190ADA08E3976 /* Pods_KIF.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DBA7AD8C211480BF00137296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB270C642113131B00EE2CDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB270C6B2113131B00EE2CDC;
+			remoteInfo = WhereIsMyRick;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		431D9F867199D9E2CBCBC30C /* Pods-KIF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIF/Pods-KIF.debug.xcconfig"; sourceTree = "<group>"; };
 		47A3E8BA13F8C543C4E1971E /* Pods-WhereIsMyRick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereIsMyRick.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhereIsMyRick/Pods-WhereIsMyRick.release.xcconfig"; sourceTree = "<group>"; };
+		52559AEBB28190ADA08E3976 /* Pods_KIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5750C1E65A97C4E938C412F6 /* Pods-KIF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIF/Pods-KIF.release.xcconfig"; sourceTree = "<group>"; };
 		699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhereIsMyRick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B7FA9A2C253D182F2BE379F /* Pods-WhereIsMyRick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereIsMyRick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereIsMyRick/Pods-WhereIsMyRick.debug.xcconfig"; sourceTree = "<group>"; };
 		DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsMyRick.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +55,9 @@
 		DB270C8821133C5F00EE2CDC /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		DBA7AD7F21146BA900137296 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DBA7AD8021146BA900137296 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		DBA7AD87211480BF00137296 /* KIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA7AD8B211480BF00137296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA7AD91211487B400137296 /* KIFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBA7AD84211480BF00137296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECEDE89016AF2306696671EF /* Pods_KIF.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */,
+				52559AEBB28190ADA08E3976 /* Pods_KIF.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -67,6 +94,8 @@
 			children = (
 				6B7FA9A2C253D182F2BE379F /* Pods-WhereIsMyRick.debug.xcconfig */,
 				47A3E8BA13F8C543C4E1971E /* Pods-WhereIsMyRick.release.xcconfig */,
+				431D9F867199D9E2CBCBC30C /* Pods-KIF.debug.xcconfig */,
+				5750C1E65A97C4E938C412F6 /* Pods-KIF.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -75,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				DB270C6E2113131B00EE2CDC /* WhereIsMyRick */,
+				DBA7AD88211480BF00137296 /* KIF */,
 				DB270C6D2113131B00EE2CDC /* Products */,
 				45B1733434293F1EB2496F05 /* Pods */,
 				1AB027E660C228D9E87FBF72 /* Frameworks */,
@@ -85,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */,
+				DBA7AD87211480BF00137296 /* KIFTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +140,15 @@
 			path = WhereIsMyRick;
 			sourceTree = "<group>";
 		};
+		DBA7AD88211480BF00137296 /* KIF */ = {
+			isa = PBXGroup;
+			children = (
+				DBA7AD8B211480BF00137296 /* Info.plist */,
+				DBA7AD91211487B400137296 /* KIFTests.swift */,
+			);
+			path = KIF;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,18 +171,43 @@
 			productReference = DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DBA7AD86211480BF00137296 /* KIF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA7AD8E211480BF00137296 /* Build configuration list for PBXNativeTarget "KIF" */;
+			buildPhases = (
+				C5CD5BF9906A85843B0B4EE0 /* [CP] Check Pods Manifest.lock */,
+				DBA7AD83211480BF00137296 /* Sources */,
+				DBA7AD84211480BF00137296 /* Frameworks */,
+				DBA7AD85211480BF00137296 /* Resources */,
+				7532F6AA3E35A5FC4AC5D596 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA7AD8D211480BF00137296 /* PBXTargetDependency */,
+			);
+			name = KIF;
+			productName = KIF;
+			productReference = DBA7AD87211480BF00137296 /* KIFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DB270C642113131B00EE2CDC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = showmax;
 				TargetAttributes = {
 					DB270C6B2113131B00EE2CDC = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					DBA7AD86211480BF00137296 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = DB270C6B2113131B00EE2CDC;
 					};
 				};
 			};
@@ -160,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				DB270C6B2113131B00EE2CDC /* WhereIsMyRick */,
+				DBA7AD86211480BF00137296 /* KIF */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +240,13 @@
 				DBA7AD8221146BA900137296 /* DetailViewController.xib in Resources */,
 				DB270C752113131B00EE2CDC /* Main.storyboard in Resources */,
 				DB270C8A21133C5F00EE2CDC /* CharacterCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA7AD85211480BF00137296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +291,42 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhereIsMyRick/Pods-WhereIsMyRick-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7532F6AA3E35A5FC4AC5D596 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KIF/Pods-KIF-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIF/Pods-KIF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5CD5BF9906A85843B0B4EE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KIF-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -235,7 +344,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBA7AD83211480BF00137296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA7AD92211487B400137296 /* KIFTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBA7AD8D211480BF00137296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB270C6B2113131B00EE2CDC /* WhereIsMyRick */;
+			targetProxy = DBA7AD8C211480BF00137296 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DB270C732113131B00EE2CDC /* Main.storyboard */ = {
@@ -409,6 +534,56 @@
 			};
 			name = Release;
 		};
+		DBA7AD8F211480BF00137296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431D9F867199D9E2CBCBC30C /* Pods-KIF.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C226648446;
+				INFOPLIST_FILE = KIF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.KIF;
+				PRODUCT_NAME = KIFTests;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhereIsMyRick.app/WhereIsMyRick";
+			};
+			name = Debug;
+		};
+		DBA7AD90211480BF00137296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5750C1E65A97C4E938C412F6 /* Pods-KIF.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C226648446;
+				INFOPLIST_FILE = KIF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.KIF;
+				PRODUCT_NAME = KIFTests;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhereIsMyRick.app/WhereIsMyRick";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -426,6 +601,15 @@
 			buildConfigurations = (
 				DB270C7F2113131E00EE2CDC /* Debug */,
 				DB270C802113131E00EE2CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA7AD8E211480BF00137296 /* Build configuration list for PBXNativeTarget "KIF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA7AD8F211480BF00137296 /* Debug */,
+				DBA7AD90211480BF00137296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
