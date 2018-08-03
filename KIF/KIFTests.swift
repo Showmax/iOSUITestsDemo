@@ -19,14 +19,32 @@ import XCTest
 
 class KIFTests: XCTestCase {
 
-    /// On search screen
-    /// I try to search for 'MoCk'
-    /// I expect to see no results notice
-    func test__emptyState() { }
+    override class func setUp() {
+        KIFEnableAccessibility()
+    }
 
-    /// On search screen
-    /// I try to search for 'Pickle'
-    /// I try to tap on first result
-    /// I expect to be on 'Pickle Rick' detail screen
-    func test__happyPath() { }
+    override func setUp() {
+        super.setUp()
+        AppDelegate.restartApp()
+    }
+
+    func test__emptyState() {
+        // Act: I try to search for 'MoCk'
+        tester().enterText("MoCk", intoViewWithAccessibilityLabel: nil, traits: .searchField, expectedResult: nil)
+
+        // Assert: I expect to see no results notice
+        let noResults = tester().waitForView(withAccessibilityLabel: AccessibilityLabel.noResultsNotice)
+        XCTAssertNotNil(noResults)
+    }
+
+    func test__happyPath() {
+        // Act: Search for 'Pickle' and tap on first result
+        tester().enterText("Pickle", intoViewWithAccessibilityLabel: nil, traits: .searchField, expectedResult: nil)
+        let results = tester().waitForView(withAccessibilityLabel: AccessibilityLabel.searchResultsList) as? UICollectionView
+        tester().tapItem(at: IndexPath(item: 0, section: 0), in: results)
+
+        // Assert: I expect to be on 'Pickle Rick' detail screen
+        let name = tester().waitForView(withAccessibilityLabel: AccessibilityLabel.characterName) as? UILabel
+        XCTAssert(name?.text == "Pickle Rick")
+    }
 }

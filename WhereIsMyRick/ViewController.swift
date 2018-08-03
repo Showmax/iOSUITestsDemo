@@ -25,10 +25,18 @@ class ViewController: UIViewController {
     }
 
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView! {
+        didSet {
+            collectionView.accessibilityLabel = AccessibilityLabel.searchResultsList
+        }
+    }
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var errorLabel: UILabel!
-    @IBOutlet weak var emptyView: UIView!
+    @IBOutlet weak var emptyView: UIView! {
+        didSet {
+            emptyView.accessibilityLabel = AccessibilityLabel.noResultsNotice
+        }
+    }
 
     let engine = SearchEngine()
     lazy var collectionManager: CollectionViewManager = {

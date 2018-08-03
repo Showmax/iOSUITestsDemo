@@ -19,7 +19,11 @@ class DetailViewController: UIViewController {
 
     let character: Character
     @IBOutlet weak var avatar: UIImageView!
-    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var name: UILabel! {
+        didSet {
+            name.accessibilityLabel = AccessibilityLabel.characterName
+        }
+    }
     
     init(of character: Character) {
         self.character = character

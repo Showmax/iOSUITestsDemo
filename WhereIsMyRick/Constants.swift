@@ -12,14 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import UIKit
-
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
-
-    static func restartApp() {
-        let delegate = UIApplication.shared.delegate as? AppDelegate
-        delegate?.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-    }
+enum AccessibilityLabel {
+    static let searchResultsList = "Search results"
+    static let characterName = "Character name"
+    static let noResultsNotice = "No results"
 }

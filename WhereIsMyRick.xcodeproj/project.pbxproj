@@ -21,6 +21,8 @@
 		DBA7AD8121146BA900137296 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD7F21146BA900137296 /* DetailViewController.swift */; };
 		DBA7AD8221146BA900137296 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA7AD8021146BA900137296 /* DetailViewController.xib */; };
 		DBA7AD92211487B400137296 /* KIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD91211487B400137296 /* KIFTests.swift */; };
+		DBA7AD9421148C0000137296 /* KIFSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD9321148C0000137296 /* KIFSupport.swift */; };
+		DBA7AD962114907E00137296 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD952114907E00137296 /* Constants.swift */; };
 		ECEDE89016AF2306696671EF /* Pods_KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52559AEBB28190ADA08E3976 /* Pods_KIF.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		DBA7AD87211480BF00137296 /* KIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA7AD8B211480BF00137296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA7AD91211487B400137296 /* KIFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFTests.swift; sourceTree = "<group>"; };
+		DBA7AD9321148C0000137296 /* KIFSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFSupport.swift; sourceTree = "<group>"; };
+		DBA7AD952114907E00137296 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 				DB270C7B2113131E00EE2CDC /* Info.plist */,
 				DB270C8721133C5E00EE2CDC /* CharacterCell.swift */,
 				DB270C8821133C5F00EE2CDC /* CharacterCell.xib */,
+				DBA7AD952114907E00137296 /* Constants.swift */,
 			);
 			path = WhereIsMyRick;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 		DBA7AD88211480BF00137296 /* KIF */ = {
 			isa = PBXGroup;
 			children = (
+				DBA7AD9321148C0000137296 /* KIFSupport.swift */,
 				DBA7AD8B211480BF00137296 /* Info.plist */,
 				DBA7AD91211487B400137296 /* KIFTests.swift */,
 			);
@@ -341,6 +347,7 @@
 				DB270C722113131B00EE2CDC /* ViewController.swift in Sources */,
 				DB270C702113131B00EE2CDC /* AppDelegate.swift in Sources */,
 				DBA7AD8121146BA900137296 /* DetailViewController.swift in Sources */,
+				DBA7AD962114907E00137296 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA7AD9421148C0000137296 /* KIFSupport.swift in Sources */,
 				DBA7AD92211487B400137296 /* KIFTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
