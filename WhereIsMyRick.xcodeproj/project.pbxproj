@@ -18,6 +18,8 @@
 		DB270C86211339AA00EE2CDC /* CollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C85211339AA00EE2CDC /* CollectionManager.swift */; };
 		DB270C8921133C5F00EE2CDC /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C8721133C5E00EE2CDC /* CharacterCell.swift */; };
 		DB270C8A21133C5F00EE2CDC /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB270C8821133C5F00EE2CDC /* CharacterCell.xib */; };
+		DBA7AD8121146BA900137296 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD7F21146BA900137296 /* DetailViewController.swift */; };
+		DBA7AD8221146BA900137296 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA7AD8021146BA900137296 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		DB270C85211339AA00EE2CDC /* CollectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionManager.swift; sourceTree = "<group>"; };
 		DB270C8721133C5E00EE2CDC /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		DB270C8821133C5F00EE2CDC /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
+		DBA7AD7F21146BA900137296 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DBA7AD8021146BA900137296 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			children = (
 				DB270C6F2113131B00EE2CDC /* AppDelegate.swift */,
 				DB270C81211335B900EE2CDC /* Entities.swift */,
+				DBA7AD7F21146BA900137296 /* DetailViewController.swift */,
+				DBA7AD8021146BA900137296 /* DetailViewController.xib */,
 				DB270C83211336E600EE2CDC /* SearchEngine.swift */,
 				DB270C712113131B00EE2CDC /* ViewController.swift */,
 				DB270C85211339AA00EE2CDC /* CollectionManager.swift */,
@@ -165,6 +171,7 @@
 			files = (
 				DB270C7A2113131E00EE2CDC /* LaunchScreen.storyboard in Resources */,
 				DB270C772113131E00EE2CDC /* Assets.xcassets in Resources */,
+				DBA7AD8221146BA900137296 /* DetailViewController.xib in Resources */,
 				DB270C752113131B00EE2CDC /* Main.storyboard in Resources */,
 				DB270C8A21133C5F00EE2CDC /* CharacterCell.xib in Resources */,
 			);
@@ -224,6 +231,7 @@
 				DB270C8921133C5F00EE2CDC /* CharacterCell.swift in Sources */,
 				DB270C722113131B00EE2CDC /* ViewController.swift in Sources */,
 				DB270C702113131B00EE2CDC /* AppDelegate.swift in Sources */,
+				DBA7AD8121146BA900137296 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
