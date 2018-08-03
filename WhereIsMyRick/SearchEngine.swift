@@ -59,7 +59,8 @@ class SearchEngine {
     }
 
     private func url(for query: String) -> URL {
-        return URL(string: "https://rickandmortyapi.com/api/character/?name=\(query)")!
+        let escaped = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        return URL(string: "https://rickandmortyapi.com/api/character/?name=\(escaped)")!
     }
 
     private func parse(from data: Data) -> Result<[Character], Error> {
