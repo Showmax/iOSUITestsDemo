@@ -10,6 +10,7 @@ Here will be listed dependencies of project and how to install them.
 - Install EarlGrey gem by:  
 `gem install earlgrey -v 1.14.0`  
 **EarlGrey** use this gem as part of `pod install`  
+
 > [Never instal gems with sudo!](https://github.com/calabash/calabash-ios/wiki/Best-Practice%3A--Never-install-gems-with-sudo)  
 > Instead we recommend to use [RVM](https://rvm.io)
 
