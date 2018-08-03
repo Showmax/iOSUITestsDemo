@@ -10,3 +10,7 @@ target 'KIF' do
   pod 'KIF'
   pod 'KIF/IdentifierTests'
 end
+
+target 'EarlGrey' do
+  pod 'EarlGrey'
+end

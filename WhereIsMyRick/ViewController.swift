@@ -27,7 +27,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
-            collectionView.accessibilityLabel = Accessibility.searchResultsList
+            collectionView.accessibilityIdentifier = Accessibility.searchResultsList
+//            collectionView.isAccessibilityElement = true
         }
     }
     @IBOutlet weak var errorView: UIView!
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var emptyView: UIView! {
         didSet {
             emptyView.accessibilityLabel = Accessibility.noResultsNotice
+            emptyView.isAccessibilityElement = true
         }
     }
 

@@ -39,7 +39,7 @@ class XCUITests: XCTestCase {
         // Act: Search for 'Pickle' and tap on first result
         app.searchFields.firstMatch.tap()
         app.typeText("Pickle")
-        app.collectionViews[Accessibility.searchResultsList].cells.firstMatch.tap()
+        app.cells.firstMatch.tap()
 
         // Assert: I expect to be on 'Pickle Rick' detail screen
         let name = app.staticTexts.element(matching: .any, identifier: Accessibility.characterName)

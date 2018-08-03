@@ -1,4 +1,5 @@
 PODS:
+  - EarlGrey (1.14.0)
   - KIF (3.7.4):
     - KIF/Core (= 3.7.4)
   - KIF/Core (3.7.4)
@@ -8,6 +9,7 @@ PODS:
   - Result (4.0.0)
 
 DEPENDENCIES:
+  - EarlGrey
   - KIF
   - KIF/IdentifierTests
   - Nuke
@@ -15,15 +17,17 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - EarlGrey
     - KIF
     - Nuke
     - Result
 
 SPEC CHECKSUMS:
+  EarlGrey: 334a8a524345243392a8cf5f15f7d2ad030441f7
   KIF: f3d01c109ee9d1cfe6b0f2bb2aa278e807e971e2
   Nuke: 3680b7186b18f84a5e9e283bfce4357bfd70fdf9
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
 
-PODFILE CHECKSUM: 01c95d2ee40bbf021695523b231b51b54bbba1b8
+PODFILE CHECKSUM: 3739e131fd9a4021db9882c5815fe33d91d27260
 
 COCOAPODS: 1.5.3

@@ -18,7 +18,12 @@ import Nuke
 class CharacterCell: UICollectionViewCell {
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var name: UILabel!
-    
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        isAccessibilityElement = true
+    }
+
     func setup(with character: Character) {
         name.text = character.name
         Nuke.loadImage(with: character.image, into: avatar)

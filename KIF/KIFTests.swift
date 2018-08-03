@@ -40,7 +40,7 @@ class KIFTests: XCTestCase {
     func test__happyPath() {
         // Act: Search for 'Pickle' and tap on first result
         tester().enterText("Pickle", intoViewWithAccessibilityLabel: nil, traits: .searchField, expectedResult: nil)
-        let results = tester().waitForView(withAccessibilityLabel: Accessibility.searchResultsList) as? UICollectionView
+        let results = tester().waitForView(withAccessibilityIdentifier: Accessibility.searchResultsList) as? UICollectionView
         tester().tapItem(at: IndexPath(item: 0, section: 0), in: results)
 
         // Assert: I expect to be on 'Pickle Rick' detail screen
