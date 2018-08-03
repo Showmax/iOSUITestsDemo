@@ -2,11 +2,14 @@ PODS:
   - KIF (3.7.4):
     - KIF/Core (= 3.7.4)
   - KIF/Core (3.7.4)
+  - KIF/IdentifierTests (3.7.4):
+    - KIF/Core
   - Nuke (7.3)
   - Result (4.0.0)
 
 DEPENDENCIES:
   - KIF
+  - KIF/IdentifierTests
   - Nuke
   - Result (~> 4.0.0)
 
@@ -21,6 +24,6 @@ SPEC CHECKSUMS:
   Nuke: 3680b7186b18f84a5e9e283bfce4357bfd70fdf9
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
 
-PODFILE CHECKSUM: 56e1b68fe2b0adc11d12da8a8a7ef91bdb57d0fd
+PODFILE CHECKSUM: 01c95d2ee40bbf021695523b231b51b54bbba1b8
 
 COCOAPODS: 1.5.3

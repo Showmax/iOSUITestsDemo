@@ -23,11 +23,20 @@
 		DBA7AD92211487B400137296 /* KIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD91211487B400137296 /* KIFTests.swift */; };
 		DBA7AD9421148C0000137296 /* KIFSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD9321148C0000137296 /* KIFSupport.swift */; };
 		DBA7AD962114907E00137296 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD952114907E00137296 /* Constants.swift */; };
+		DBA7AD9E2114977100137296 /* XCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD9D2114977100137296 /* XCUITests.swift */; };
+		DBA7ADA521149D0900137296 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD952114907E00137296 /* Constants.swift */; };
 		ECEDE89016AF2306696671EF /* Pods_KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52559AEBB28190ADA08E3976 /* Pods_KIF.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		DBA7AD8C211480BF00137296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB270C642113131B00EE2CDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB270C6B2113131B00EE2CDC;
+			remoteInfo = WhereIsMyRick;
+		};
+		DBA7ADA02114977100137296 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DB270C642113131B00EE2CDC /* Project object */;
 			proxyType = 1;
@@ -43,6 +52,7 @@
 		5750C1E65A97C4E938C412F6 /* Pods-KIF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIF/Pods-KIF.release.xcconfig"; sourceTree = "<group>"; };
 		699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhereIsMyRick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B7FA9A2C253D182F2BE379F /* Pods-WhereIsMyRick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereIsMyRick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereIsMyRick/Pods-WhereIsMyRick.debug.xcconfig"; sourceTree = "<group>"; };
+		BC2701D6275EA91A8399E6A5 /* Pods_XCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsMyRick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB270C6F2113131B00EE2CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB270C712113131B00EE2CDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +72,9 @@
 		DBA7AD91211487B400137296 /* KIFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFTests.swift; sourceTree = "<group>"; };
 		DBA7AD9321148C0000137296 /* KIFSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFSupport.swift; sourceTree = "<group>"; };
 		DBA7AD952114907E00137296 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DBA7AD9B2114977100137296 /* XCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA7AD9D2114977100137296 /* XCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITests.swift; sourceTree = "<group>"; };
+		DBA7AD9F2114977100137296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +94,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBA7AD982114977100137296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +109,7 @@
 			children = (
 				699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */,
 				52559AEBB28190ADA08E3976 /* Pods_KIF.framework */,
+				BC2701D6275EA91A8399E6A5 /* Pods_XCUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +130,7 @@
 			children = (
 				DB270C6E2113131B00EE2CDC /* WhereIsMyRick */,
 				DBA7AD88211480BF00137296 /* KIF */,
+				DBA7AD9C2114977100137296 /* XCUITests */,
 				DB270C6D2113131B00EE2CDC /* Products */,
 				45B1733434293F1EB2496F05 /* Pods */,
 				1AB027E660C228D9E87FBF72 /* Frameworks */,
@@ -120,6 +142,7 @@
 			children = (
 				DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */,
 				DBA7AD87211480BF00137296 /* KIFTests.xctest */,
+				DBA7AD9B2114977100137296 /* XCUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +176,15 @@
 				DBA7AD91211487B400137296 /* KIFTests.swift */,
 			);
 			path = KIF;
+			sourceTree = "<group>";
+		};
+		DBA7AD9C2114977100137296 /* XCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBA7AD9D2114977100137296 /* XCUITests.swift */,
+				DBA7AD9F2114977100137296 /* Info.plist */,
+			);
+			path = XCUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +229,24 @@
 			productReference = DBA7AD87211480BF00137296 /* KIFTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DBA7AD9A2114977100137296 /* XCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA7ADA22114977100137296 /* Build configuration list for PBXNativeTarget "XCUITests" */;
+			buildPhases = (
+				DBA7AD972114977100137296 /* Sources */,
+				DBA7AD982114977100137296 /* Frameworks */,
+				DBA7AD992114977100137296 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA7ADA12114977100137296 /* PBXTargetDependency */,
+			);
+			name = XCUITests;
+			productName = XCUITests;
+			productReference = DBA7AD9B2114977100137296 /* XCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +263,10 @@
 					DBA7AD86211480BF00137296 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
+						TestTargetID = DB270C6B2113131B00EE2CDC;
+					};
+					DBA7AD9A2114977100137296 = {
+						CreatedOnToolsVersion = 10.0;
 						TestTargetID = DB270C6B2113131B00EE2CDC;
 					};
 				};
@@ -232,6 +286,7 @@
 			targets = (
 				DB270C6B2113131B00EE2CDC /* WhereIsMyRick */,
 				DBA7AD86211480BF00137296 /* KIF */,
+				DBA7AD9A2114977100137296 /* XCUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +305,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DBA7AD85211480BF00137296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA7AD992114977100137296 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,6 +422,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBA7AD972114977100137296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA7AD9E2114977100137296 /* XCUITests.swift in Sources */,
+				DBA7ADA521149D0900137296 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -367,6 +438,11 @@
 			isa = PBXTargetDependency;
 			target = DB270C6B2113131B00EE2CDC /* WhereIsMyRick */;
 			targetProxy = DBA7AD8C211480BF00137296 /* PBXContainerItemProxy */;
+		};
+		DBA7ADA12114977100137296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB270C6B2113131B00EE2CDC /* WhereIsMyRick */;
+			targetProxy = DBA7ADA02114977100137296 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,10 +588,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C226648446;
 				INFOPLIST_FILE = WhereIsMyRick/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.WhereIsMyRick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -531,10 +604,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C226648446;
 				INFOPLIST_FILE = WhereIsMyRick/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.WhereIsMyRick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -552,11 +622,7 @@
 				DEVELOPMENT_TEAM = C226648446;
 				INFOPLIST_FILE = KIF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.KIF;
@@ -578,17 +644,48 @@
 				DEVELOPMENT_TEAM = C226648446;
 				INFOPLIST_FILE = KIF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.KIF;
 				PRODUCT_NAME = KIFTests;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhereIsMyRick.app/WhereIsMyRick";
+			};
+			name = Release;
+		};
+		DBA7ADA32114977100137296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C226648446;
+				INFOPLIST_FILE = XCUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.XCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WhereIsMyRick;
+			};
+			name = Debug;
+		};
+		DBA7ADA42114977100137296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C226648446;
+				INFOPLIST_FILE = XCUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.XCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WhereIsMyRick;
 			};
 			name = Release;
 		};
@@ -618,6 +715,15 @@
 			buildConfigurations = (
 				DBA7AD8F211480BF00137296 /* Debug */,
 				DBA7AD90211480BF00137296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA7ADA22114977100137296 /* Build configuration list for PBXNativeTarget "XCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA7ADA32114977100137296 /* Debug */,
+				DBA7ADA42114977100137296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

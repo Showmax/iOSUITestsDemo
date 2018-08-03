@@ -27,14 +27,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
-            collectionView.accessibilityLabel = AccessibilityLabel.searchResultsList
+            collectionView.accessibilityLabel = Accessibility.searchResultsList
         }
     }
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var emptyView: UIView! {
         didSet {
-            emptyView.accessibilityLabel = AccessibilityLabel.noResultsNotice
+            emptyView.accessibilityLabel = Accessibility.noResultsNotice
         }
     }
 

@@ -12,39 +12,39 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import Foundation
-import KIF
 import XCTest
-@testable import WhereIsMyRick
 
-class KIFTests: XCTestCase {
+class XCUITests: XCTestCase {
 
-    override class func setUp() {
-        KIFEnableAccessibility()
-    }
+    var app: XCUIApplication!
 
     override func setUp() {
         super.setUp()
-        AppDelegate.restartApp()
+        app = XCUIApplication()
+        continueAfterFailure = false
+        app.launch()
     }
 
     func test__emptyState() {
         // Act: I try to search for 'MoCk'
-        tester().enterText("MoCk", intoViewWithAccessibilityLabel: nil, traits: .searchField, expectedResult: nil)
+        app.searchFields.firstMatch.tap()
+        app.typeText("MoCk")
 
         // Assert: I expect to see no results notice
-        let noResults = tester().waitForView(withAccessibilityLabel: Accessibility.noResultsNotice)
-        XCTAssertNotNil(noResults)
+        let exists = app.otherElements[Accessibility.noResultsNotice].waitForExistence(timeout: 10)
+        XCTAssert(exists)
     }
 
     func test__happyPath() {
         // Act: Search for 'Pickle' and tap on first result
-        tester().enterText("Pickle", intoViewWithAccessibilityLabel: nil, traits: .searchField, expectedResult: nil)
-        let results = tester().waitForView(withAccessibilityLabel: Accessibility.searchResultsList) as? UICollectionView
-        tester().tapItem(at: IndexPath(item: 0, section: 0), in: results)
+        app.searchFields.firstMatch.tap()
+        app.typeText("Pickle")
+        app.collectionViews[Accessibility.searchResultsList].cells.firstMatch.tap()
 
         // Assert: I expect to be on 'Pickle Rick' detail screen
-        let name = tester().waitForView(withAccessibilityIdentifier: Accessibility.characterName) as? UILabel
-        XCTAssert(name?.text == "Pickle Rick")
+        let name = app.staticTexts.element(matching: .any, identifier: Accessibility.characterName)
+        let exists = name.waitForExistence(timeout: 10)
+        let hasRightName = name.label == "Pickle Rick"
+        XCTAssert(exists && hasRightName)
     }
 }

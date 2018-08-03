@@ -8,4 +8,5 @@ end
 
 target 'KIF' do
   pod 'KIF'
+  pod 'KIF/IdentifierTests'
 end

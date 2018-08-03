@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var name: UILabel! {
         didSet {
-            name.accessibilityLabel = AccessibilityLabel.characterName
+            name.accessibilityIdentifier = Accessibility.characterName
         }
     }
     
