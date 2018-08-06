@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="WhereIsMyRick" customModuleProvider="target">
             <connections>
                 <outlet property="avatar" destination="X7X-9v-YnY" id="8b8-uw-SL0"/>
+                <outlet property="avatarHeight" destination="hqT-OV-t3Q" id="KC9-QT-UFB"/>
                 <outlet property="name" destination="ldi-IF-G2Y" id="7OO-J1-C0Y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,10 +23,10 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X7X-9v-YnY">
+                <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="X7X-9v-YnY">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="X7X-9v-YnY" secondAttribute="height" id="jJl-p7-AQA"/>
+                        <constraint firstAttribute="height" constant="375" id="hqT-OV-t3Q"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldi-IF-G2Y">
@@ -46,10 +47,10 @@
             <constraints>
                 <constraint firstItem="ldi-IF-G2Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="53r-1h-zHH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X7X-9v-YnY" secondAttribute="trailing" id="5wK-KY-eF4"/>
-                <constraint firstItem="ldi-IF-G2Y" firstAttribute="top" secondItem="X7X-9v-YnY" secondAttribute="bottom" constant="20" id="Ae4-Fo-aQM"/>
                 <constraint firstItem="YTh-9m-VvC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="OOm-Pj-qVF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ldi-IF-G2Y" secondAttribute="trailing" constant="10" id="Yto-K9-Z1w"/>
                 <constraint firstItem="X7X-9v-YnY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bDW-BK-W9j"/>
+                <constraint firstItem="ldi-IF-G2Y" firstAttribute="top" secondItem="X7X-9v-YnY" secondAttribute="bottom" constant="20" id="jOb-b0-6oL"/>
                 <constraint firstItem="X7X-9v-YnY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qmb-Ww-dlz"/>
                 <constraint firstItem="YTh-9m-VvC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="zZi-Xd-1u4"/>
             </constraints>

@@ -15,17 +15,18 @@
 import UIKit
 import Nuke
 
-class CharacterCell: UICollectionViewCell {
+class MovieCell: UICollectionViewCell {
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var name: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        avatar.contentMode = .scaleAspectFit
         isAccessibilityElement = true
     }
 
-    func setup(with character: Character) {
-        name.text = character.name
-        Nuke.loadImage(with: character.image, into: avatar)
+    func setup(with character: Movie) {
+        name.text = character.title
+        Nuke.loadImage(with: character.poster, into: avatar)
     }
 }

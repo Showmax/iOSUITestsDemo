@@ -29,8 +29,8 @@ class KIFTests: XCTestCase {
     }
 
     func test__emptyState() {
-        // Act: I try to search for 'MoCk'
-        tester().enterText("MoCk", intoViewWithAccessibilityLabel: nil, traits: .searchField, expectedResult: nil)
+        // Act: I try to search for 'Aaaa'
+        tester().enterText("Aaaa", intoViewWithAccessibilityLabel: nil, traits: .searchField, expectedResult: nil)
 
         // Assert: I expect to see no results notice
         let noResults = tester().waitForView(withAccessibilityLabel: Accessibility.noResultsNotice)
@@ -38,13 +38,13 @@ class KIFTests: XCTestCase {
     }
 
     func test__happyPath() {
-        // Act: Search for 'Pickle' and tap on first result
-        tester().enterText("Pickle", intoViewWithAccessibilityLabel: nil, traits: .searchField, expectedResult: nil)
+        // Act: Search for 'Ant-Man and' and tap on first result
+        tester().enterText("Ant-Man and", intoViewWithAccessibilityLabel: nil, traits: .searchField, expectedResult: nil)
         let results = tester().waitForView(withAccessibilityIdentifier: Accessibility.searchResultsList) as? UICollectionView
         tester().tapItem(at: IndexPath(item: 0, section: 0), in: results)
 
-        // Assert: I expect to be on 'Pickle Rick' detail screen
-        let name = tester().waitForView(withAccessibilityIdentifier: Accessibility.characterName) as? UILabel
-        XCTAssert(name?.text == "Pickle Rick")
+        // Assert: I expect to be on 'Ant-Man and the Wasp' detail screen
+        let title = tester().waitForView(withAccessibilityIdentifier: Accessibility.movieTitle) as? UILabel
+        XCTAssert(title?.text == "Ant-Man and the Wasp")
     }
 }

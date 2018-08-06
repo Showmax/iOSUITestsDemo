@@ -17,16 +17,17 @@ import Nuke
 
 class DetailViewController: UIViewController {
 
-    let character: Character
+    let movie: Movie
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var name: UILabel! {
         didSet {
-            name.accessibilityIdentifier = Accessibility.characterName
+            name.accessibilityIdentifier = Accessibility.movieTitle
         }
     }
+    @IBOutlet weak var avatarHeight: NSLayoutConstraint!
     
-    init(of character: Character) {
-        self.character = character
+    init(of movie: Movie) {
+        self.movie = movie
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -35,11 +36,17 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Nuke.loadImage(with: character.image, into: avatar)
-        name.text = character.name
+        Nuke.loadImage(with: movie.poster, options: .shared, into: avatar, progress: nil) { [weak self] response, _ in
+            response.map { self?.update(with: $0.image) }
+        }
+        name.text = movie.title
     }
 
     @IBAction func close() {
         dismiss(animated: true, completion: nil)
+    }
+
+    func update(with image: Image) {
+        avatarHeight?.constant = UIScreen.main.bounds.width / image.size.width * image.size.height
     }
 }

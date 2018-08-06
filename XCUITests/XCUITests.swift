@@ -26,9 +26,9 @@ class XCUITests: XCTestCase {
     }
 
     func test__emptyState() {
-        // Act: I try to search for 'MoCk'
+        // Act: I try to search for 'Aaaa'
         app.searchFields.firstMatch.tap()
-        app.typeText("MoCk")
+        app.typeText("Aaaa")
 
         // Assert: I expect to see no results notice
         let exists = app.otherElements[Accessibility.noResultsNotice].waitForExistence(timeout: 10)
@@ -36,15 +36,15 @@ class XCUITests: XCTestCase {
     }
 
     func test__happyPath() {
-        // Act: Search for 'Pickle' and tap on first result
+        // Act: Search for 'Ant-Man and' and tap on first result
         app.searchFields.firstMatch.tap()
-        app.typeText("Pickle")
+        app.typeText("Ant-Man and")
         app.cells.firstMatch.tap()
 
-        // Assert: I expect to be on 'Pickle Rick' detail screen
-        let name = app.staticTexts.element(matching: .any, identifier: Accessibility.characterName)
-        let exists = name.waitForExistence(timeout: 10)
-        let hasRightName = name.label == "Pickle Rick"
-        XCTAssert(exists && hasRightName)
+        // Assert: I expect to be on 'Ant-Man and the Wasp' detail screen
+        let title = app.staticTexts.element(matching: .any, identifier: Accessibility.movieTitle)
+        let exists = title.waitForExistence(timeout: 10)
+        let hasRightTitle = title.label == "Ant-Man and the Wasp"
+        XCTAssert(exists && hasRightTitle)
     }
 }

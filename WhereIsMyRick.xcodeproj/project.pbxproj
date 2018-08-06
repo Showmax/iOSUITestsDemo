@@ -19,8 +19,8 @@
 		DB270C82211335B900EE2CDC /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C81211335B900EE2CDC /* Entities.swift */; };
 		DB270C84211336E600EE2CDC /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C83211336E600EE2CDC /* SearchEngine.swift */; };
 		DB270C86211339AA00EE2CDC /* CollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C85211339AA00EE2CDC /* CollectionManager.swift */; };
-		DB270C8921133C5F00EE2CDC /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C8721133C5E00EE2CDC /* CharacterCell.swift */; };
-		DB270C8A21133C5F00EE2CDC /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB270C8821133C5F00EE2CDC /* CharacterCell.xib */; };
+		DB270C8921133C5F00EE2CDC /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C8721133C5E00EE2CDC /* MovieCell.swift */; };
+		DB270C8A21133C5F00EE2CDC /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB270C8821133C5F00EE2CDC /* MovieCell.xib */; };
 		DBA7AD8121146BA900137296 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD7F21146BA900137296 /* DetailViewController.swift */; };
 		DBA7AD8221146BA900137296 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA7AD8021146BA900137296 /* DetailViewController.xib */; };
 		DBA7AD92211487B400137296 /* KIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD91211487B400137296 /* KIFTests.swift */; };
@@ -93,8 +93,8 @@
 		DB270C81211335B900EE2CDC /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		DB270C83211336E600EE2CDC /* SearchEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngine.swift; sourceTree = "<group>"; };
 		DB270C85211339AA00EE2CDC /* CollectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionManager.swift; sourceTree = "<group>"; };
-		DB270C8721133C5E00EE2CDC /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
-		DB270C8821133C5F00EE2CDC /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
+		DB270C8721133C5E00EE2CDC /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		DB270C8821133C5F00EE2CDC /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		DBA7AD7F21146BA900137296 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DBA7AD8021146BA900137296 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		DBA7AD87211480BF00137296 /* KIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,8 +214,8 @@
 				DB270C762113131E00EE2CDC /* Assets.xcassets */,
 				DB270C782113131E00EE2CDC /* LaunchScreen.storyboard */,
 				DB270C7B2113131E00EE2CDC /* Info.plist */,
-				DB270C8721133C5E00EE2CDC /* CharacterCell.swift */,
-				DB270C8821133C5F00EE2CDC /* CharacterCell.xib */,
+				DB270C8721133C5E00EE2CDC /* MovieCell.swift */,
+				DB270C8821133C5F00EE2CDC /* MovieCell.xib */,
 				DBA7AD952114907E00137296 /* Constants.swift */,
 			);
 			path = WhereIsMyRick;
@@ -399,7 +399,7 @@
 				DB270C772113131E00EE2CDC /* Assets.xcassets in Resources */,
 				DBA7AD8221146BA900137296 /* DetailViewController.xib in Resources */,
 				DB270C752113131B00EE2CDC /* Main.storyboard in Resources */,
-				DB270C8A21133C5F00EE2CDC /* CharacterCell.xib in Resources */,
+				DB270C8A21133C5F00EE2CDC /* MovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,7 +547,7 @@
 				DB270C86211339AA00EE2CDC /* CollectionManager.swift in Sources */,
 				DB270C82211335B900EE2CDC /* Entities.swift in Sources */,
 				DB270C84211336E600EE2CDC /* SearchEngine.swift in Sources */,
-				DB270C8921133C5F00EE2CDC /* CharacterCell.swift in Sources */,
+				DB270C8921133C5F00EE2CDC /* MovieCell.swift in Sources */,
 				DB270C722113131B00EE2CDC /* ViewController.swift in Sources */,
 				DB270C702113131B00EE2CDC /* AppDelegate.swift in Sources */,
 				DBA7AD8121146BA900137296 /* DetailViewController.swift in Sources */,

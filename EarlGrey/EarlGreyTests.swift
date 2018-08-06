@@ -24,10 +24,10 @@ class EarlGreyTests: XCTestCase {
     }
 
     func test__emptyState() {
-        // Act: I try to search for 'MoCk'
+        // Act: I try to search for 'Aaaa'
         EarlGrey
             .selectElement(with: .accessibilityTrait(.searchField))
-            .perform(.type(text: "MoCk"))
+            .perform(.type(text: "Aaaa"))
 
         // Assert: I expect to see no results notice
         EarlGrey
@@ -36,10 +36,10 @@ class EarlGreyTests: XCTestCase {
     }
 
     func test__happyPath() {
-        // Act: Search for 'Pickle' and tap on first result
+        // Act: Search for 'Ant-Man and' and tap on first result
         EarlGrey
             .selectElement(with: .accessibilityTrait(.searchField))
-            .perform(.type(text: "Pickle"))
+            .perform(.type(text: "Ant-Man and"))
 
         let resultCell: Matcher = .all([
             .ancestor(.accessibilityID(Accessibility.searchResultsList)),
@@ -50,10 +50,9 @@ class EarlGreyTests: XCTestCase {
             .atIndex(0)
             .perform(.tap())
 
-        // Assert: I expect to be on 'Pickle Rick' detail screen
+        // Assert: I expect to be on 'Ant-Man and the Wasp' detail screen
         EarlGrey
-            .selectElement(with: .accessibilityID(Accessibility.characterName))
-            .assert(.notNil)
-            .assert(.text("Pickle Rick"))
+            .selectElement(with: .accessibilityID(Accessibility.movieTitle))
+            .assert(.text("Ant-Man and the Wasp"))
     }
 }

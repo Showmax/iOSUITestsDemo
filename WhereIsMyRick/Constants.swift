@@ -14,6 +14,6 @@
 
 enum Accessibility {
     static let searchResultsList = "Search results"
-    static let characterName = "Character name"
+    static let movieTitle = "Movie title"
     static let noResultsNotice = "No results"
 }

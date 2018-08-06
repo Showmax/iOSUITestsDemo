@@ -23,7 +23,7 @@ class SearchEngine {
         case empty
     }
 
-    typealias Handler = (Result<[Character], Error>) -> Void
+    typealias Handler = (Result<[Movie], Error>) -> Void
     var onNewData: Handler?
 
     private var currentTask: URLSessionDataTask?
@@ -60,10 +60,10 @@ class SearchEngine {
 
     private func url(for query: String) -> URL {
         let escaped = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-        return URL(string: "https://rickandmortyapi.com/api/character/?name=\(escaped)")!
+        return URL(string: "https://www.omdbapi.com/?apikey=8daf4550&s=\(escaped)")!
     }
 
-    private func parse(from data: Data) -> Result<[Character], Error> {
+    private func parse(from data: Data) -> Result<[Movie], Error> {
         do {
             let response = try JSONDecoder().decode(Response.self, from: data)
             return .success(response.results ?? [])

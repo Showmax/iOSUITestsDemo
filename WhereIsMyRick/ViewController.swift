@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     enum State {
         case idle
         case empty
-        case data([Character])
+        case data([Movie])
         case error(Error)
     }
 

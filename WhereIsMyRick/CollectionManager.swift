@@ -16,10 +16,10 @@ import UIKit
 
 class CollectionViewManager: NSObject {
 
-    typealias Handler = (Character) -> Void
+    typealias Handler = (Movie) -> Void
 
     var onItemSelect: Handler?
-    var data: [Character] = [] {
+    var data: [Movie] = [] {
         didSet {
             collectionView.reloadData()
         }
@@ -35,7 +35,7 @@ class CollectionViewManager: NSObject {
     func prepare(_ collection: UICollectionView) {
         collection.dataSource = self
         collection.delegate = self
-        collection.register(UINib(nibName: "CharacterCell", bundle: nil), forCellWithReuseIdentifier: "CharacterCell")
+        collection.register(UINib(nibName: "MovieCell", bundle: nil), forCellWithReuseIdentifier: "MovieCell")
         guard let fl = collection.collectionViewLayout as? UICollectionViewFlowLayout else { return }
         let spacing: CGFloat = 20
         let width = (UIScreen.main.bounds.width - spacing) / 2
@@ -52,7 +52,7 @@ extension CollectionViewManager: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharacterCell", for: indexPath) as! CharacterCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as! MovieCell
         cell.setup(with: data[indexPath.item])
         return cell
     }

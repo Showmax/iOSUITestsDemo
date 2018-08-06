@@ -14,11 +14,18 @@
 
 import Foundation
 
-struct Character: Decodable {
-    let name: String
-    let image: URL
+struct Movie: Decodable {
+    enum CodingKeys: String, CodingKey {
+        case title = "Title"
+        case poster = "Poster"
+    }
+    let title: String
+    let poster: URL
 }
 
 struct Response: Decodable {
-    let results: [Character]?
+    enum CodingKeys: String, CodingKey {
+        case results = "Search"
+    }
+    let results: [Movie]?
 }
