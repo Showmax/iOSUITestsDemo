@@ -6,11 +6,27 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		DB06236E2119AEB400EC03C5 /* Appium */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DB06236F2119AEB400EC03C5 /* Build configuration list for PBXAggregateTarget "Appium" */;
+			buildPhases = (
+				DB0623742119AEC100EC03C5 /* CopyFiles */,
+			);
+			dependencies = (
+				DB0623732119AEBF00EC03C5 /* PBXTargetDependency */,
+			);
+			name = Appium;
+			productName = Appium;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		23A5C5380BA2CC27183D3125 /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233B0BD9DA3E03442468B052 /* EarlGrey.framework */; };
 		4C751CFB359EE1A00F601FB9 /* EarlGrey.framework in EarlGrey Copy Files */ = {isa = PBXBuildFile; fileRef = 233B0BD9DA3E03442468B052 /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4E78A15D365E82F38DC6F4FF /* Pods_WhereIsMyRick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */; };
 		633DB051DA384C4035915EDB /* Pods_EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC2316886A6CCD5C1141EF3 /* Pods_EarlGrey.framework */; };
+		DB0623752119AED800EC03C5 /* WhereIsMyRick.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DB270C702113131B00EE2CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C6F2113131B00EE2CDC /* AppDelegate.swift */; };
 		DB270C722113131B00EE2CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C712113131B00EE2CDC /* ViewController.swift */; };
 		DB270C752113131B00EE2CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB270C732113131B00EE2CDC /* Main.storyboard */; };
@@ -36,6 +52,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DB0623722119AEBF00EC03C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB270C642113131B00EE2CDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB270C6B2113131B00EE2CDC;
+			remoteInfo = WhereIsMyRick;
+		};
 		DBA7AD8C211480BF00137296 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DB270C642113131B00EE2CDC /* Project object */;
@@ -69,6 +92,16 @@
 				4C751CFB359EE1A00F601FB9 /* EarlGrey.framework in EarlGrey Copy Files */,
 			);
 			name = "EarlGrey Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0623742119AEC100EC03C5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SRCROOT}/Appium";
+			dstSubfolderSpec = 0;
+			files = (
+				DB0623752119AED800EC03C5 /* WhereIsMyRick.app in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -179,6 +212,7 @@
 		DB270C632113131B00EE2CDC = {
 			isa = PBXGroup;
 			children = (
+				DB5CE6982114C39800E6190D /* Appium */,
 				DB270C6E2113131B00EE2CDC /* WhereIsMyRick */,
 				DBA7AD88211480BF00137296 /* KIF */,
 				DBA7AD9C2114977100137296 /* XCUITests */,
@@ -219,6 +253,13 @@
 				DBA7AD952114907E00137296 /* Constants.swift */,
 			);
 			path = WhereIsMyRick;
+			sourceTree = "<group>";
+		};
+		DB5CE6982114C39800E6190D /* Appium */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Appium;
 			sourceTree = "<group>";
 		};
 		DBA7AD88211480BF00137296 /* KIF */ = {
@@ -351,6 +392,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = showmax;
 				TargetAttributes = {
+					DB06236E2119AEB400EC03C5 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					DB270C6B2113131B00EE2CDC = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -386,6 +430,7 @@
 				DBA7AD86211480BF00137296 /* KIF */,
 				DBA7AD9A2114977100137296 /* XCUITests */,
 				DBA7ADA92114A8AA00137296 /* EarlGrey */,
+				DB06236E2119AEB400EC03C5 /* Appium */,
 			);
 		};
 /* End PBXProject section */
@@ -587,6 +632,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DB0623732119AEBF00EC03C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB270C6B2113131B00EE2CDC /* WhereIsMyRick */;
+			targetProxy = DB0623722119AEBF00EC03C5 /* PBXContainerItemProxy */;
+		};
 		DBA7AD8D211480BF00137296 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DB270C6B2113131B00EE2CDC /* WhereIsMyRick */;
@@ -624,6 +674,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DB0623702119AEB400EC03C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C226648446;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB0623712119AEB400EC03C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C226648446;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		DB270C7C2113131E00EE2CDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -919,6 +987,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DB06236F2119AEB400EC03C5 /* Build configuration list for PBXAggregateTarget "Appium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0623702119AEB400EC03C5 /* Debug */,
+				DB0623712119AEB400EC03C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DB270C672113131B00EE2CDC /* Build configuration list for PBXProject "WhereIsMyRick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

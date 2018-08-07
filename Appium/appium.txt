@@ -1,0 +1,6 @@
+[caps]
+platformName = "ios"
+deviceName = "1. Monday (X)"
+platformVersion = "11.4"
+automationName = 'XCUITest'
+app = "./WhereIsMyRick.app"
