@@ -37,6 +37,21 @@
 		DB270C86211339AA00EE2CDC /* CollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C85211339AA00EE2CDC /* CollectionManager.swift */; };
 		DB270C8921133C5F00EE2CDC /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C8721133C5E00EE2CDC /* MovieCell.swift */; };
 		DB270C8A21133C5F00EE2CDC /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB270C8821133C5F00EE2CDC /* MovieCell.xib */; };
+		DB447C20214291920090B816 /* CollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C85211339AA00EE2CDC /* CollectionManager.swift */; };
+		DB447C21214291920090B816 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C81211335B900EE2CDC /* Entities.swift */; };
+		DB447C22214291920090B816 /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C83211336E600EE2CDC /* SearchEngine.swift */; };
+		DB447C23214291920090B816 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C8721133C5E00EE2CDC /* MovieCell.swift */; };
+		DB447C24214291920090B816 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C712113131B00EE2CDC /* ViewController.swift */; };
+		DB447C25214291920090B816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C6F2113131B00EE2CDC /* AppDelegate.swift */; };
+		DB447C26214291920090B816 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD7F21146BA900137296 /* DetailViewController.swift */; };
+		DB447C27214291920090B816 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD952114907E00137296 /* Constants.swift */; };
+		DB447C29214291920090B816 /* Pods_WhereIsMyRick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */; };
+		DB447C2B214291920090B816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB270C782113131E00EE2CDC /* LaunchScreen.storyboard */; };
+		DB447C2C214291920090B816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB270C762113131E00EE2CDC /* Assets.xcassets */; };
+		DB447C2D214291920090B816 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA7AD8021146BA900137296 /* DetailViewController.xib */; };
+		DB447C2E214291920090B816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB270C732113131B00EE2CDC /* Main.storyboard */; };
+		DB447C2F214291920090B816 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB270C8821133C5F00EE2CDC /* MovieCell.xib */; };
+		DB447C37214291AF0090B816 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB447C36214291AF0090B816 /* CFNetwork.framework */; };
 		DBA7AD8121146BA900137296 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD7F21146BA900137296 /* DetailViewController.swift */; };
 		DBA7AD8221146BA900137296 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA7AD8021146BA900137296 /* DetailViewController.xib */; };
 		DBA7AD92211487B400137296 /* KIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7AD91211487B400137296 /* KIFTests.swift */; };
@@ -48,7 +63,9 @@
 		DBA7ADB92114AAA200137296 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7ADB62114AAA200137296 /* Matcher.swift */; };
 		DBA7ADBA2114AAA200137296 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7ADB72114AAA200137296 /* Action.swift */; };
 		DBA7ADBC2114AB0300137296 /* EarlGreyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7ADBB2114AB0300137296 /* EarlGreyTests.swift */; };
+		DBE5FAC321429D960098DAC8 /* Calabash.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB447C34214291920090B816 /* Calabash.app */; };
 		ECEDE89016AF2306696671EF /* Pods_KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52559AEBB28190ADA08E3976 /* Pods_KIF.framework */; };
+		F6972207ADAE4EF2337EE736 /* Pods_Calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011C46470D28A1F442913172 /* Pods_Calabash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,9 +121,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBE5FAC221429D7C0098DAC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SRCROOT}/Calabash";
+			dstSubfolderSpec = 0;
+			files = (
+				DBE5FAC321429D960098DAC8 /* Calabash.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		011C46470D28A1F442913172 /* Pods_Calabash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calabash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		102A442E6542B70CB2E82FC3 /* Pods-Calabash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calabash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calabash/Pods-Calabash.debug.xcconfig"; sourceTree = "<group>"; };
 		233B0BD9DA3E03442468B052 /* EarlGrey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EarlGrey.framework; path = Pods/EarlGrey/EarlGrey/EarlGrey.framework; sourceTree = SOURCE_ROOT; };
 		431D9F867199D9E2CBCBC30C /* Pods-KIF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIF/Pods-KIF.debug.xcconfig"; sourceTree = "<group>"; };
 		47A3E8BA13F8C543C4E1971E /* Pods-WhereIsMyRick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereIsMyRick.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhereIsMyRick/Pods-WhereIsMyRick.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +145,7 @@
 		6B7FA9A2C253D182F2BE379F /* Pods-WhereIsMyRick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereIsMyRick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereIsMyRick/Pods-WhereIsMyRick.debug.xcconfig"; sourceTree = "<group>"; };
 		BC2701D6275EA91A8399E6A5 /* Pods_XCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC2316886A6CCD5C1141EF3 /* Pods_EarlGrey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarlGrey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C651BA17CA625C2FA7822B26 /* Pods-Calabash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calabash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calabash/Pods-Calabash.release.xcconfig"; sourceTree = "<group>"; };
 		DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsMyRick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB270C6F2113131B00EE2CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB270C712113131B00EE2CDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +158,8 @@
 		DB270C85211339AA00EE2CDC /* CollectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionManager.swift; sourceTree = "<group>"; };
 		DB270C8721133C5E00EE2CDC /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		DB270C8821133C5F00EE2CDC /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		DB447C34214291920090B816 /* Calabash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calabash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB447C36214291AF0090B816 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DBA7AD7F21146BA900137296 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DBA7AD8021146BA900137296 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		DBA7AD87211480BF00137296 /* KIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +186,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E78A15D365E82F38DC6F4FF /* Pods_WhereIsMyRick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB447C28214291920090B816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB447C37214291AF0090B816 /* CFNetwork.framework in Frameworks */,
+				DB447C29214291920090B816 /* Pods_WhereIsMyRick.framework in Frameworks */,
+				F6972207ADAE4EF2337EE736 /* Pods_Calabash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,11 +229,13 @@
 		1AB027E660C228D9E87FBF72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB447C36214291AF0090B816 /* CFNetwork.framework */,
 				699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */,
 				52559AEBB28190ADA08E3976 /* Pods_KIF.framework */,
 				BC2701D6275EA91A8399E6A5 /* Pods_XCUITests.framework */,
 				233B0BD9DA3E03442468B052 /* EarlGrey.framework */,
 				BCC2316886A6CCD5C1141EF3 /* Pods_EarlGrey.framework */,
+				011C46470D28A1F442913172 /* Pods_Calabash.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,6 +249,8 @@
 				5750C1E65A97C4E938C412F6 /* Pods-KIF.release.xcconfig */,
 				DF9878C99B7E94BA8B0BBC39 /* Pods-EarlGrey.debug.xcconfig */,
 				F93CBFF53F58E669ACA38291 /* Pods-EarlGrey.release.xcconfig */,
+				102A442E6542B70CB2E82FC3 /* Pods-Calabash.debug.xcconfig */,
+				C651BA17CA625C2FA7822B26 /* Pods-Calabash.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -212,6 +258,7 @@
 		DB270C632113131B00EE2CDC = {
 			isa = PBXGroup;
 			children = (
+				DBE5FAC1214293A00098DAC8 /* Calabash */,
 				DB5CE6982114C39800E6190D /* Appium */,
 				DB270C6E2113131B00EE2CDC /* WhereIsMyRick */,
 				DBA7AD88211480BF00137296 /* KIF */,
@@ -230,6 +277,7 @@
 				DBA7AD87211480BF00137296 /* KIFTests.xctest */,
 				DBA7AD9B2114977100137296 /* XCUITests.xctest */,
 				DBA7ADAA2114A8AA00137296 /* EarlGreyTests.xctest */,
+				DB447C34214291920090B816 /* Calabash.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,6 +349,13 @@
 			path = EarlGreyWrappers;
 			sourceTree = "<group>";
 		};
+		DBE5FAC1214293A00098DAC8 /* Calabash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Calabash;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,6 +376,26 @@
 			name = WhereIsMyRick;
 			productName = WhereIsMyRick;
 			productReference = DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB447C1D214291920090B816 /* Calabash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB447C31214291920090B816 /* Build configuration list for PBXNativeTarget "Calabash" */;
+			buildPhases = (
+				DB447C1E214291920090B816 /* [CP] Check Pods Manifest.lock */,
+				DB447C1F214291920090B816 /* Sources */,
+				DB447C28214291920090B816 /* Frameworks */,
+				DB447C2A214291920090B816 /* Resources */,
+				DB447C30214291920090B816 /* [CP] Embed Pods Frameworks */,
+				DBE5FAC221429D7C0098DAC8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calabash;
+			productName = WhereIsMyRick;
+			productReference = DB447C34214291920090B816 /* Calabash.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DBA7AD86211480BF00137296 /* KIF */ = {
@@ -431,6 +506,7 @@
 				DBA7AD9A2114977100137296 /* XCUITests */,
 				DBA7ADA92114A8AA00137296 /* EarlGrey */,
 				DB06236E2119AEB400EC03C5 /* Appium */,
+				DB447C1D214291920090B816 /* Calabash */,
 			);
 		};
 /* End PBXProject section */
@@ -445,6 +521,18 @@
 				DBA7AD8221146BA900137296 /* DetailViewController.xib in Resources */,
 				DB270C752113131B00EE2CDC /* Main.storyboard in Resources */,
 				DB270C8A21133C5F00EE2CDC /* MovieCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB447C2A214291920090B816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB447C2B214291920090B816 /* LaunchScreen.storyboard in Resources */,
+				DB447C2C214291920090B816 /* Assets.xcassets in Resources */,
+				DB447C2D214291920090B816 /* DetailViewController.xib in Resources */,
+				DB447C2E214291920090B816 /* Main.storyboard in Resources */,
+				DB447C2F214291920090B816 /* MovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +670,44 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DB447C1E214291920090B816 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Calabash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB447C30214291920090B816 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Calabash/Pods-Calabash-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Calabash/Pods-Calabash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -597,6 +723,21 @@
 				DB270C702113131B00EE2CDC /* AppDelegate.swift in Sources */,
 				DBA7AD8121146BA900137296 /* DetailViewController.swift in Sources */,
 				DBA7AD962114907E00137296 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB447C1F214291920090B816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB447C20214291920090B816 /* CollectionManager.swift in Sources */,
+				DB447C21214291920090B816 /* Entities.swift in Sources */,
+				DB447C22214291920090B816 /* SearchEngine.swift in Sources */,
+				DB447C23214291920090B816 /* MovieCell.swift in Sources */,
+				DB447C24214291920090B816 /* ViewController.swift in Sources */,
+				DB447C25214291920090B816 /* AppDelegate.swift in Sources */,
+				DB447C26214291920090B816 /* DetailViewController.swift in Sources */,
+				DB447C27214291920090B816 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -844,6 +985,44 @@
 			};
 			name = Release;
 		};
+		DB447C32214291920090B816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 102A442E6542B70CB2E82FC3 /* Pods-Calabash.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C226648446;
+				INFOPLIST_FILE = WhereIsMyRick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.WhereIsMyRick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB447C33214291920090B816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C651BA17CA625C2FA7822B26 /* Pods-Calabash.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C226648446;
+				INFOPLIST_FILE = WhereIsMyRick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.showmax.WhereIsMyRick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DBA7AD8F211480BF00137296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 431D9F867199D9E2CBCBC30C /* Pods-KIF.debug.xcconfig */;
@@ -1010,6 +1189,15 @@
 			buildConfigurations = (
 				DB270C7F2113131E00EE2CDC /* Debug */,
 				DB270C802113131E00EE2CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB447C31214291920090B816 /* Build configuration list for PBXNativeTarget "Calabash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB447C32214291920090B816 /* Debug */,
+				DB447C33214291920090B816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

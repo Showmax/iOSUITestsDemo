@@ -1,0 +1,6 @@
+framework module Pods_Calabash {
+  umbrella header "Pods-Calabash-umbrella.h"
+
+  export *
+  module * { export * }
+}

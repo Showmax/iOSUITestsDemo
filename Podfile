@@ -14,3 +14,9 @@ end
 target 'EarlGrey' do
   pod 'EarlGrey'
 end
+
+target 'Calabash' do
+    pod 'Result', '~> 4.0.0'
+    pod 'Nuke'
+    pod 'Calabash'
+end

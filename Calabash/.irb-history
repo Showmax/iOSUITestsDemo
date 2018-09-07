@@ -1,0 +1,84 @@
+query "searchBar"
+touch "searchBar"
+query "searchBar"
+touch
+touch "searchBar"
+touch "search"
+query "search"
+query "textField"
+rouch "textField"
+touch "textField"
+touch ["searchBar"]
+touch(["searchBar"])
+query "view marked:searchBar"
+query "view marked:'searchBar'"
+query "view"
+query "textField"
+touch "textField"
+touch "UISearchBar"
+query "UISearchBar"
+tap
+tap "searchBar"
+touch("textField")
+start_test_server_in_background
+version
+server_version
+server_version['version']
+quit
+start_test_server_in_background
+start_test_server_in_background "5.Friday (SE)"
+start_test_server_in_background '5.Friday (SE)'
+start_test_server_in_background {:device:"1. Monday (X)"}
+start_test_server_in_background {:device = "1. Monday (X)"}
+start_test_server_in_background({:device = "1. Monday (X)"})
+start_test_server_in_background({:device => "1. Monday (X)"})
+start_test_server_in_background({:device => "5. Friday (SE)"})
+start_test_server_in_background({:device => "5. Friday (SE) (11.4)"})
+start_test_server_in_background
+start_test_server_in_background
+quit
+start_test_server_in_background
+quit
+start_test_server_in_background
+touch "searchBar"
+keyboard_enter_text Hello
+keyboard_enter_text "Hello"
+keyboard_enter_text "Helloaaa"
+query *, :accessibilityLabel
+query "*", :accessibilityLabel
+query "*", :accessibilityIdentifier
+query "*", :accessibilityLabel
+query '* accessibilityLabel:"No results"'
+query "* marked:'No results'"
+keyboard_enter_text "Ant-Man and"
+query "* marked:'Search results'"
+query "* marked:'Search results' cell"
+query "cell"
+query "collectionViewCell"
+query "* marked:'Search results' collectionViewCell"
+query("* marked:'Search results' collectionViewCell").first
+cell = query("* marked:'Search results' collectionViewCell").first
+cell
+tap(cell)
+touch(cell)
+query "* marked:'Movie title'"
+query "* marked:'Movie title' text"
+query("* marked:'Movie title'").text
+query("* marked:'Movie title'")
+query("* marked:'Movie title'").label
+query("* marked:'Movie title'").labels
+query("* marked:'Movie title'", "label")
+query("* marked:'Movie title'", "text")
+query "* text"
+query "* text:'Ant-Man and the Wasp'"
+query("* marked:'Movie title' text:'Ant-Man and the Wasp'")
+quit
+start_test_server_in_background
+query("* marked:'Movie title'", :text)
+query("* marked:'Movie title' text")
+query("* marked:'Movie title'").text
+query("* marked:'Movie title'")
+t = query("* marked:'Movie title'")
+text(t)
+text
+quit
