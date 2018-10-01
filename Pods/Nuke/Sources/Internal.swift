@@ -190,7 +190,8 @@ internal final class LinkedList<Element> {
     }
 
     /// Adds an element to the end of the list.
-    @discardableResult func append(_ element: Element) -> Node {
+    @discardableResult
+    func append(_ element: Element) -> Node {
         let node = Node(value: element)
         append(node)
         return node
@@ -311,6 +312,7 @@ internal struct _CancellationToken {
     fileprivate let source: _CancellationTokenSource? // no-op when `nil`
 
     /// Returns `true` if cancellation has been requested for this token.
+    /// Returns `false` if the source was deallocated.
     var isCancelling: Bool {
         return source?.isCancelling ?? false
     }
@@ -325,49 +327,6 @@ internal struct _CancellationToken {
     /// Special no-op token which does nothing.
     static var noOp: _CancellationToken {
         return _CancellationToken(source: nil)
-    }
-}
-
-// MARK: - CancellationSource
-
-/// Lightweight variant of _CancellationTokenSource with a single handler
-/// and struct instead of a class.
-internal struct _CancellationSource {
-    /// Returns `true` if cancellation has been requested.
-    var isCancelling: Bool {
-        return _lock.sync { _isCancelling }
-    }
-
-    private var _isCancelling: Bool = false
-    private var _observer: (() -> Void)?
-
-    mutating func register(_ closure: @escaping () -> Void) {
-        if !_register(closure) {
-            closure()
-        }
-    }
-
-    private mutating func _register(_ closure: @escaping () -> Void) -> Bool {
-        _lock.lock(); defer { _lock.unlock() }
-        guard !_isCancelling else { return false }
-        assert(_observer == nil)
-        _observer = closure
-        return true
-    }
-
-    /// Communicates a request for cancellation to the managed tokens.
-    mutating func cancel() {
-        if let observer = _cancel() {
-            observer()
-        }
-    }
-
-    private mutating func _cancel() -> (() -> Void)? {
-        _lock.lock(); defer { _lock.unlock() }
-        guard !_isCancelling else { return nil }
-        _isCancelling = true
-        defer { _observer = nil }
-        return _observer
     }
 }
 
@@ -542,35 +501,19 @@ internal struct Printer {
 struct TaskMetrics {
     var startDate: Date? = nil
     var endDate: Date? = nil
+
+    static func started() -> TaskMetrics {
+        var metrics = TaskMetrics()
+        metrics.start()
+        return metrics
+    }
+
     mutating func start() {
-        self.startDate = Date()
+        startDate = Date()
     }
+
     mutating func end() {
-        self.endDate = Date()
-    }
-}
-
-final class DisposableOperation: Hashable {
-    // When all registered tasks remove references to image processing
-    // session the wrapped operation gets deallocated.
-    deinit {
-        operation?.cancel()
-    }
-
-    weak var operation: Foundation.Operation?
-
-    init(_ operation: Foundation.Operation) {
-        self.operation = operation
-    }
-
-    // MARK: - Hashable
-
-    public static func == (lhs: DisposableOperation, rhs: DisposableOperation) -> Bool {
-        return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
-    }
-
-    public var hashValue: Int {
-        return ObjectIdentifier(self).hashValue
+        endDate = Date()
     }
 }
 
@@ -590,10 +533,13 @@ final class Property<T> {
 
     private var observers = [(T) -> Void]()
 
+    // For our use-cases we can just ignore unsubscribing for now.
     func observe(_ closure: @escaping (T) -> Void) {
         observers.append(closure)
     }
 }
+
+// MARK: - Misc
 
 #if !swift(>=4.1)
 extension Sequence {

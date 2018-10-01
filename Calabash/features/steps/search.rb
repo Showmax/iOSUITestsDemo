@@ -5,6 +5,7 @@ When(/^I search "([^"]*)"$/) do |search|
   touch("searchBar")
   wait_for_keyboard
   keyboard_enter_text(search)
+  sleep(1)
 end
 
 Then(/^I should see empty state note$/) do

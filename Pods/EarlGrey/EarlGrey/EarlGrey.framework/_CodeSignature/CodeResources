@@ -170,7 +170,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rX1MWZnFE5n7uAApda7icwNpvdA=
+		kp7WkbPTSlJ1v6H/ySzOLVIJ+NE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -210,7 +210,7 @@
 		</data>
 		<key>PrivateHeaders/GREYAppleInternals.h</key>
 		<data>
-		9QJ3whfOOw2zAmgPAAy4/aCF75s=
+		ngObJXcoLT+zoPUulksCfjFfSws=
 		</data>
 		<key>PrivateHeaders/GREYAssertions+Internal.h</key>
 		<data>
@@ -1037,11 +1037,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9QJ3whfOOw2zAmgPAAy4/aCF75s=
+			ngObJXcoLT+zoPUulksCfjFfSws=
 			</data>
 			<key>hash2</key>
 			<data>
-			MNnN4h2IKbtSdGA/+1fVR6ChQa5DT9fW4z+RGdx+5Jw=
+			UI0okCdN7S5IzgpqqSjA4R/+Yga7DDGDWgrK91e8ojI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/GREYAssertions+Internal.h</key>

@@ -37,15 +37,15 @@ public struct ImageRequest {
         get {
             // Default processor on macOS is nil, on other platforms is Decompressor
             #if !os(macOS)
-            return _ref._isDefaultProcessorUsed ? Container.decompressor : _ref._customProcessor
+            return _ref._isDefaultProcessorUsed ? ImageRequest.decompressor : _ref._processor
             #else
-            return _ref._isDefaultProcessorUsed ? nil : _ref._customProcessor
+            return _ref._isDefaultProcessorUsed ? nil : _ref._processor
             #endif
         }
         set {
             _mutate {
                 $0._isDefaultProcessorUsed = false
-                $0._customProcessor = newValue
+                $0._processor = newValue
             }
         }
     }
@@ -113,6 +113,15 @@ public struct ImageRequest {
         set { _mutate { $0.loadKey = newValue } }
     }
 
+    /// If decoding is disabled, when the image data is loaded, the pipeline is
+    /// not going to create an image from it and will produce the `.decodingFailed`
+    /// error instead. `false` by default.
+    var isDecodingDisabled: Bool {
+        // This only used by `ImagePreheater` right now
+        get { return _ref.isDecodingDisabled }
+        set { _mutate { $0.isDecodingDisabled = newValue } }
+    }
+
     /// Custom info passed alongside the request.
     public var userInfo: Any? {
         get { return _ref.userInfo }
@@ -159,6 +168,8 @@ public struct ImageRequest {
         self.processor = AnyImageProcessor(ImageDecompressor(targetSize: targetSize, contentMode: contentMode))
     }
 
+    fileprivate static let decompressor = AnyImageProcessor(ImageDecompressor())
+
     #endif
 
     // CoW:
@@ -178,13 +189,15 @@ public struct ImageRequest {
         var resource: Resource
         var _urlString: String? // memoized absoluteString
         // true unless user set a custom one, this allows us not to store the
-        // default processor anywhere in the `Container`.
+        // default processor anywhere in the `Container` & skip equality tests
+        // when the default processor is used
         var _isDefaultProcessorUsed: Bool = true
-        var _customProcessor: AnyImageProcessor?
+        var _processor: AnyImageProcessor?
         var memoryCacheOptions = MemoryCacheOptions()
         var priority: ImageRequest.Priority = .normal
         var cacheKey: AnyHashable?
         var loadKey: AnyHashable?
+        var isDecodingDisabled: Bool = false
         var userInfo: Any?
 
         /// Creates a resource with a default processor.
@@ -196,18 +209,15 @@ public struct ImageRequest {
         init(container ref: Container) {
             self.resource = ref.resource
             self._urlString = ref._urlString
-            self._customProcessor = ref._customProcessor
             self._isDefaultProcessorUsed = ref._isDefaultProcessorUsed
+            self._processor = ref._processor
             self.memoryCacheOptions = ref.memoryCacheOptions
             self.priority = ref.priority
             self.cacheKey = ref.cacheKey
             self.loadKey = ref.loadKey
+            self.isDecodingDisabled = ref.isDecodingDisabled
             self.userInfo = ref.userInfo
         }
-
-        #if !os(macOS)
-        fileprivate static let decompressor = AnyImageProcessor(ImageDecompressor())
-        #endif
     }
 
     /// Resource representation (either URL or URLRequest).
@@ -273,9 +283,11 @@ internal extension ImageRequest {
             if let lhsCustomKey = lhs._ref.cacheKey, let rhsCustomKey = rhs._ref.cacheKey {
                 return lhsCustomKey == rhsCustomKey
             }
-            return lhs._ref._urlString == rhs._ref._urlString
-                && lhs._ref._isDefaultProcessorUsed == rhs._ref._isDefaultProcessorUsed
-                && lhs._ref._customProcessor == rhs._ref._customProcessor
+            guard lhs._ref._urlString == rhs._ref._urlString else {
+                return false
+            }
+            return (lhs._ref._isDefaultProcessorUsed && rhs._ref._isDefaultProcessorUsed)
+                || (lhs.processor == rhs.processor)
         }
     }
 

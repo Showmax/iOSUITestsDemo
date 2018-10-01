@@ -1,12 +1,12 @@
 PODS:
-  - Calabash (0.21.5)
-  - EarlGrey (1.14.0)
+  - Calabash (0.21.6)
+  - EarlGrey (1.15.0)
   - KIF (3.7.4):
     - KIF/Core (= 3.7.4)
   - KIF/Core (3.7.4)
   - KIF/IdentifierTests (3.7.4):
     - KIF/Core
-  - Nuke (7.3)
+  - Nuke (7.4.1)
   - Result (4.0.0)
 
 DEPENDENCIES:
@@ -26,10 +26,10 @@ SPEC REPOS:
     - Result
 
 SPEC CHECKSUMS:
-  Calabash: c8b2e65359a0d9fabe8278edfdc36bb16896ab88
-  EarlGrey: 334a8a524345243392a8cf5f15f7d2ad030441f7
+  Calabash: 2f48c8d137809eb64a0f41a5094db5c83e3c309f
+  EarlGrey: 289a16cc7d08a54b962d72881b21e36d5103b549
   KIF: f3d01c109ee9d1cfe6b0f2bb2aa278e807e971e2
-  Nuke: 3680b7186b18f84a5e9e283bfce4357bfd70fdf9
+  Nuke: 0f0b8df0541a14777f9b4d907371a7901c5c5a75
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
 
 PODFILE CHECKSUM: 7ea44e14089c0fb0ffa1a90a5fe249d79267e133

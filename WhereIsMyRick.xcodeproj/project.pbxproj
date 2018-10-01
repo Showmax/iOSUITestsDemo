@@ -63,7 +63,6 @@
 		DBA7ADB92114AAA200137296 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7ADB62114AAA200137296 /* Matcher.swift */; };
 		DBA7ADBA2114AAA200137296 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7ADB72114AAA200137296 /* Action.swift */; };
 		DBA7ADBC2114AB0300137296 /* EarlGreyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7ADBB2114AB0300137296 /* EarlGreyTests.swift */; };
-		DBE5FAC321429D960098DAC8 /* Calabash.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB447C34214291920090B816 /* Calabash.app */; };
 		ECEDE89016AF2306696671EF /* Pods_KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52559AEBB28190ADA08E3976 /* Pods_KIF.framework */; };
 		F6972207ADAE4EF2337EE736 /* Pods_Calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011C46470D28A1F442913172 /* Pods_Calabash.framework */; };
 /* End PBXBuildFile section */
@@ -118,16 +117,6 @@
 			dstSubfolderSpec = 0;
 			files = (
 				DB0623752119AED800EC03C5 /* WhereIsMyRick.app in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DBE5FAC221429D7C0098DAC8 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "${SRCROOT}/Calabash";
-			dstSubfolderSpec = 0;
-			files = (
-				DBE5FAC321429D960098DAC8 /* Calabash.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +376,6 @@
 				DB447C28214291920090B816 /* Frameworks */,
 				DB447C2A214291920090B816 /* Resources */,
 				DB447C30214291920090B816 /* [CP] Embed Pods Frameworks */,
-				DBE5FAC221429D7C0098DAC8 /* CopyFiles */,
 			);
 			buildRules = (
 			);

@@ -45,7 +45,7 @@ public extension ImageCaching {
 /// The elements stored in cache are automatically discarded if either *cost* or
 /// *count* limit is reached. The default cost limit represents a number of bytes
 /// and is calculated based on the amount of physical memory available on the
-/// device. The default count limit is set to `Int.max`.
+/// device. The default cmount limit is set to `Int.max`.
 ///
 /// `Cache` automatically removes all stored elements when it received a
 /// memory warning. It also automatically removes *most* of cached elements
@@ -194,17 +194,6 @@ internal final class _Cache<Key: Hashable, Value> {
         #endif
     }
 
-    subscript(key: Key) -> Value? {
-        get { return value(forKey: key) }
-        set {
-            if let newValue = newValue {
-                set(newValue, forKey: key)
-            } else {
-                removeValue(forKey: key)
-            }
-        }
-    }
-
     func value(forKey key: Key) -> Value? {
         lock.lock(); defer { lock.unlock() }
 
@@ -234,7 +223,8 @@ internal final class _Cache<Key: Hashable, Value> {
         _trim() // _trim is extremely fast, it's OK to call it each time
     }
 
-    @discardableResult func removeValue(forKey key: Key) -> Value? {
+    @discardableResult
+    func removeValue(forKey key: Key) -> Value? {
         lock.lock(); defer { lock.unlock() }
 
         guard let node = map[key] else { return nil }

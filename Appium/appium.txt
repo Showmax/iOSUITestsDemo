@@ -1,6 +1,6 @@
 [caps]
 platformName = "ios"
 deviceName = "1. Monday (X)"
-platformVersion = "11.4"
+platformVersion = "12.0"
 automationName = 'XCUITest'
 app = "./WhereIsMyRick.app"
