@@ -29,9 +29,9 @@ class Snapshoter {
 
     init(_ test: XCTestCase?) {
         self.test = test
-        let testName = test.map { String(describing: $0.classForCoder) } ?? "undefined_test"
-
-        snapshotController = FBSnapshotTestController(testName: testName)
+//        let testName = test.map { String(describing: $0.classForCoder) } ?? "undefined_test"
+        guard let testClass = test?.testRunClass else { fatalError() }
+        snapshotController = FBSnapshotTestController.init(test: testClass)
         snapshotController.recordMode = Snapshoter.isRecording
         snapshotController.agnosticOptions = [.screenSize]
 
