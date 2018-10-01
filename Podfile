@@ -20,3 +20,7 @@ target 'Calabash' do
     pod 'Nuke'
     pod 'Calabash'
 end
+
+target '📸' do
+    pod 'iOSSnapshotTestCase'
+end

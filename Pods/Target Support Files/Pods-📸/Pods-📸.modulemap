@@ -1,0 +1,6 @@
+framework module Pods__ {
+  umbrella header "Pods-📸-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,6 +1,9 @@
 PODS:
   - Calabash (0.21.6)
   - EarlGrey (1.15.0)
+  - iOSSnapshotTestCase (4.0.0):
+  - iOSSnapshotTestCase/SwiftSupport (4.0.0):
+    - iOSSnapshotTestCase/Core
   - KIF (3.7.4):
     - KIF/Core (= 3.7.4)
   - KIF/Core (3.7.4)
@@ -12,6 +15,7 @@ PODS:
 DEPENDENCIES:
   - Calabash
   - EarlGrey
+  - iOSSnapshotTestCase
   - KIF
   - KIF/IdentifierTests
   - Nuke
@@ -21,6 +25,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Calabash
     - EarlGrey
+    - iOSSnapshotTestCase
     - KIF
     - Nuke
     - Result
@@ -28,10 +33,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Calabash: 2f48c8d137809eb64a0f41a5094db5c83e3c309f
   EarlGrey: 289a16cc7d08a54b962d72881b21e36d5103b549
+  iOSSnapshotTestCase: 711379b19f69a22c131527df862352c877c2773c
   KIF: f3d01c109ee9d1cfe6b0f2bb2aa278e807e971e2
   Nuke: 0f0b8df0541a14777f9b4d907371a7901c5c5a75
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
 
-PODFILE CHECKSUM: 7ea44e14089c0fb0ffa1a90a5fe249d79267e133
+PODFILE CHECKSUM: 47c4fd2cc03baa074ad73c43594f5cc95baec0db
 
 COCOAPODS: 1.5.3
