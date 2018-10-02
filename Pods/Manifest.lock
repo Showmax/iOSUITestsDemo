@@ -2,6 +2,8 @@ PODS:
   - Calabash (0.21.6)
   - EarlGrey (1.15.0)
   - iOSSnapshotTestCase (4.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 4.0.0)
+  - iOSSnapshotTestCase/Core (4.0.0)
   - iOSSnapshotTestCase/SwiftSupport (4.0.0):
     - iOSSnapshotTestCase/Core
   - KIF (3.7.4):

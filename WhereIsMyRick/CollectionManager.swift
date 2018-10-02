@@ -40,7 +40,6 @@ class CollectionViewManager: NSObject {
     func prepare(_ collection: UICollectionView) {
         collection.dataSource = self
         collection.delegate = self
-        collection.prefetchDataSource = self
         collection.register(UINib(nibName: "MovieCell", bundle: nil), forCellWithReuseIdentifier: "MovieCell")
         guard let fl = collection.collectionViewLayout as? UICollectionViewFlowLayout else { return }
         let spacing: CGFloat = 20
@@ -68,14 +67,5 @@ extension CollectionViewManager: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         onItemSelect?(data[indexPath.item])
-    }
-}
-
-extension CollectionViewManager: UICollectionViewDataSourcePrefetching {
-    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
-        for indexPath in indexPaths {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as! MovieCell
-            cell.setup(with: data[indexPath.item])
-        }
     }
 }

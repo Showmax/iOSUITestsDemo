@@ -43,7 +43,6 @@ class ViewController: UIViewController {
     let engine = SearchEngine()
     lazy var collectionManager: CollectionViewManager = {
         let collectionManager = CollectionViewManager(collectionView)
-        collectionView.prefetchDataSource = collectionManager as? UICollectionViewDataSourcePrefetching
         collectionManager.onItemSelect = { [weak self] in
             self?.present(DetailViewController(of: $0), animated: true, completion: nil)
         }

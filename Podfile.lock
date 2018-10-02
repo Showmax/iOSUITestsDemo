@@ -4,6 +4,8 @@ PODS:
   - iOSSnapshotTestCase (4.0.0):
     - iOSSnapshotTestCase/SwiftSupport (= 4.0.0)
   - iOSSnapshotTestCase/Core (4.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (4.0.0):
+    - iOSSnapshotTestCase/Core
   - KIF (3.7.4):
     - KIF/Core (= 3.7.4)
   - KIF/Core (3.7.4)
@@ -31,6 +33,8 @@ SPEC REPOS:
     - Result
 
 SPEC CHECKSUMS:
+  Calabash: 2f48c8d137809eb64a0f41a5094db5c83e3c309f
+  EarlGrey: 289a16cc7d08a54b962d72881b21e36d5103b549
   iOSSnapshotTestCase: 711379b19f69a22c131527df862352c877c2773c
   KIF: f3d01c109ee9d1cfe6b0f2bb2aa278e807e971e2
   Nuke: 0f0b8df0541a14777f9b4d907371a7901c5c5a75
