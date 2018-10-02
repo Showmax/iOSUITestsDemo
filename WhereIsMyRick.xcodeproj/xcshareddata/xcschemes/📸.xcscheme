@@ -18,7 +18,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E7B448752162107200538D25"
                BuildableName = "&#x1f4f8;.xctest"
-               BlueprintName = "&#x1f4f8;"
+               BlueprintName = "📸"
                ReferencedContainer = "container:WhereIsMyRick.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -38,6 +38,8 @@
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "FB_REFERENCE_IMAGE_DIR"
@@ -49,9 +51,12 @@
             value = "$(PROJECT_DIR)/&#x1f4f8;/&#x274c;&#x1f5bc;"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "DYLD_INSERT_LIBRARIES"
+            value = "@executable_path/EarlGrey.framework/EarlGrey"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"

@@ -39,15 +39,9 @@ class  📸: XCTestCase {
     }
 
     func test__ViewControllerState__LoadedCharacters() {
-
-        let text = "Pulp fiction"
-//        let character = WhereIsMyRick.Character(
-//            name: "Rick Sanchez",
-//            image: URL(string: "https://rickandmortyapi.com/api/character/avatar/159.jpeg")!
-//        )
-//
-
-//        snapshoter.checkSnapshot(of: vc.view)
+        let movies = createMockMovies()
+        let vc = createViewController(with: .data(movies))
+        snapshoter.checkSnapshot(of: vc.view)
     }
 }
 
@@ -59,4 +53,45 @@ private extension 📸 {
         vc.translate(to: state)
         return vc
     }
+
+    func createMockMovies() -> [WhereIsMyRick.Movie] {
+
+        let movies: [Movie] = [
+            Movie(title: "Pulp Fiction", poster: .image(UIImage(named: "PF1.jpg")!)),
+            Movie(title: "Pulp Fiction: The Facts", poster: .image(UIImage(named: "PF1.jpg")!)),
+            Movie(title: "\'Pulp Fiction\' on a Dime: A 10th Anniversary Retrospect", poster: .image(UIImage(named: "PF2.jpg")!)),
+            Movie(title: "Pulp Fiction Art: Cheap Thrills & Painted Nightmares", poster: .image(UIImage(named: "PF2.jpg")!)),
+            Movie(title: "Pulp Fiction: The Golden Age of Storytelling", poster: .image(UIImage(named: "PF2.jpg")!)),
+            Movie(title: "Sex Academy 5: The Art of Pulp Fiction", poster: .image(UIImage(named: "PF3.jpg")!)),
+            Movie(title: "Ceské Pulp Fiction a Blair Witch", poster: .image(UIImage(named: "PF3.jpg")!)),
+            Movie(title: "Pulp Fiction Spoof: Vincent & Mia", poster: .image(UIImage(named: "PF3.jpg")!)),
+        ]
+        return movies
+    }
+
+    func wait(for duration: TimeInterval) {
+        let waitExpectation = expectation(description: "Waiting")
+
+        let when = DispatchTime.now() + duration
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            waitExpectation.fulfill()
+        }
+
+        waitForExpectations(timeout: duration+1)
+    }
+
+
+//    func createMockMovies() -> [WhereIsMyRick.Movie] {
+//        let movies: [Movie] = [
+//            Movie(title: "Pulp Fiction", poster: Bundle.main.url(forResource: "PF1", withExtension: "jpg")!),
+//            Movie(title: "Pulp Fiction: The Facts", poster:  Bundle.main.url(forResource: "PF1", withExtension: "jpg")!),
+//            Movie(title: "\'Pulp Fiction\' on a Dime: A 10th Anniversary Retrospect", poster: Bundle.main.url(forResource: "PF2", withExtension: "jpg")!),
+//            Movie(title: "Pulp Fiction Art: Cheap Thrills & Painted Nightmares", poster:  Bundle.main.url(forResource: "PF2", withExtension: "jpg")!),
+//            Movie(title: "Pulp Fiction: The Golden Age of Storytelling", poster:  Bundle.main.url(forResource: "PF2", withExtension: "jpg")!),
+//            Movie(title: "Sex Academy 5: The Art of Pulp Fiction", poster:  Bundle.main.url(forResource: "PF3", withExtension: "jpg")!),
+//            Movie(title: "Ceské Pulp Fiction a Blair Witch", poster:  Bundle.main.url(forResource: "PF3", withExtension: "jpg")!),
+//            Movie(title: "Pulp Fiction Spoof: Vincent & Mia", poster:  Bundle.main.url(forResource: "PF3", withExtension: "jpg")!)
+//        ]
+//        return movies
+//    }
 }

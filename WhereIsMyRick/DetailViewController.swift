@@ -36,8 +36,14 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Nuke.loadImage(with: movie.poster, options: .shared, into: avatar, progress: nil) { [weak self] response, _ in
-            response.map { self?.update(with: $0.image) }
+        switch movie.poster {
+        case .image(let image):
+            avatar.image = image
+            self.update(with: image)
+        case .url(let url):
+            Nuke.loadImage(with: url, options: .shared, into: avatar, progress: nil) { [weak self] response, _ in
+                response.map { self?.update(with: $0.image) }
+            }
         }
         name.text = movie.title
     }

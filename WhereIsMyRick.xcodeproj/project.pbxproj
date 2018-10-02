@@ -25,8 +25,10 @@
 		23A5C5380BA2CC27183D3125 /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233B0BD9DA3E03442468B052 /* EarlGrey.framework */; };
 		4C751CFB359EE1A00F601FB9 /* EarlGrey.framework in EarlGrey Copy Files */ = {isa = PBXBuildFile; fileRef = 233B0BD9DA3E03442468B052 /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4E78A15D365E82F38DC6F4FF /* Pods_WhereIsMyRick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */; };
+		60AB4C36A73DE4A89360559C /* EarlGrey.framework in EarlGrey Copy Files */ = {isa = PBXBuildFile; fileRef = 233B0BD9DA3E03442468B052 /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		633DB051DA384C4035915EDB /* Pods_EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC2316886A6CCD5C1141EF3 /* Pods_EarlGrey.framework */; };
 		97B0075F0B9A51EE48B9D7F2 /* Pods__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BD5ECB541D9C17A508DDD6 /* Pods__.framework */; };
+		CC478C1B1199FC0CDC7A1842 /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233B0BD9DA3E03442468B052 /* EarlGrey.framework */; };
 		DB0623752119AED800EC03C5 /* WhereIsMyRick.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DB270C702113131B00EE2CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C6F2113131B00EE2CDC /* AppDelegate.swift */; };
 		DB270C722113131B00EE2CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C712113131B00EE2CDC /* ViewController.swift */; };
@@ -65,8 +67,15 @@
 		DBA7ADBA2114AAA200137296 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7ADB72114AAA200137296 /* Action.swift */; };
 		DBA7ADBC2114AB0300137296 /* EarlGreyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7ADBB2114AB0300137296 /* EarlGreyTests.swift */; };
 		DBE5FAC321429D960098DAC8 /* Calabash.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB447C34214291920090B816 /* Calabash.app */; };
+		E715F8792162302100EAD848 /* PF1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E715F8782162302100EAD848 /* PF1.jpg */; };
+		E715F87B2162303F00EAD848 /* PF2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E715F87A2162303F00EAD848 /* PF2.jpg */; };
+		E715F87D216230AE00EAD848 /* PF3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E715F87C216230AE00EAD848 /* PF3.jpg */; };
 		E7B448822162191100538D25 /* 📸.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B448802162191100538D25 /* 📸.swift */; };
 		E7B448832162191100538D25 /* 📷.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B448812162191100538D25 /* 📷.swift */; };
+		E7E820BF21623358002F2170 /* PF3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E715F87C216230AE00EAD848 /* PF3.jpg */; };
+		E7E820C02162338D002F2170 /* PF1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E715F8782162302100EAD848 /* PF1.jpg */; };
+		E7E820C12162338D002F2170 /* PF2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E715F87A2162303F00EAD848 /* PF2.jpg */; };
+		EBF5A372963D7FB1595345CF /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED55BC66C0CFE90A300674 /* EarlGrey.swift */; };
 		ECEDE89016AF2306696671EF /* Pods_KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52559AEBB28190ADA08E3976 /* Pods_KIF.framework */; };
 		F6972207ADAE4EF2337EE736 /* Pods_Calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011C46470D28A1F442913172 /* Pods_Calabash.framework */; };
 /* End PBXBuildFile section */
@@ -110,6 +119,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		415B09C927748756FD4EF30D /* EarlGrey Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TEST_HOST)/../";
+			dstSubfolderSpec = 0;
+			files = (
+				60AB4C36A73DE4A89360559C /* EarlGrey.framework in EarlGrey Copy Files */,
+			);
+			name = "EarlGrey Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDB09A4252C1D1118B6E25D5 /* EarlGrey Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +165,7 @@
 		699753CE03E73AAF3B8F32FF /* Pods_WhereIsMyRick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhereIsMyRick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B7FA9A2C253D182F2BE379F /* Pods-WhereIsMyRick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereIsMyRick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereIsMyRick/Pods-WhereIsMyRick.debug.xcconfig"; sourceTree = "<group>"; };
 		A4DB69870DB7F36E253F4230 /* Pods-📸.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-📸.release.xcconfig"; path = "Pods/Target Support Files/Pods-📸/Pods-📸.release.xcconfig"; sourceTree = "<group>"; };
+		B5ED55BC66C0CFE90A300674 /* EarlGrey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		BC2701D6275EA91A8399E6A5 /* Pods_XCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC2316886A6CCD5C1141EF3 /* Pods_EarlGrey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarlGrey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C651BA17CA625C2FA7822B26 /* Pods-Calabash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calabash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calabash/Pods-Calabash.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +200,9 @@
 		DBA7ADB72114AAA200137296 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		DBA7ADBB2114AB0300137296 /* EarlGreyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGreyTests.swift; sourceTree = "<group>"; };
 		DF9878C99B7E94BA8B0BBC39 /* Pods-EarlGrey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlGrey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarlGrey/Pods-EarlGrey.debug.xcconfig"; sourceTree = "<group>"; };
+		E715F8782162302100EAD848 /* PF1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PF1.jpg; sourceTree = "<group>"; };
+		E715F87A2162303F00EAD848 /* PF2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PF2.jpg; sourceTree = "<group>"; };
+		E715F87C216230AE00EAD848 /* PF3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PF3.jpg; sourceTree = "<group>"; };
 		E7B448762162107200538D25 /* 📸.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "📸.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B4487A2162107200538D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7B448802162191100538D25 /* 📸.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📸.swift"; sourceTree = "<group>"; };
@@ -235,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97B0075F0B9A51EE48B9D7F2 /* Pods__.framework in Frameworks */,
+				CC478C1B1199FC0CDC7A1842 /* EarlGrey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,12 +401,24 @@
 			path = Calabash;
 			sourceTree = "<group>";
 		};
+		E715F8772162300400EAD848 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E715F8782162302100EAD848 /* PF1.jpg */,
+				E715F87A2162303F00EAD848 /* PF2.jpg */,
+				E715F87C216230AE00EAD848 /* PF3.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E7B448772162107200538D25 /* 📸 */ = {
 			isa = PBXGroup;
 			children = (
+				E715F8772162300400EAD848 /* Resources */,
 				E7B448812162191100538D25 /* 📷.swift */,
 				E7B448802162191100538D25 /* 📸.swift */,
 				E7B4487A2162107200538D25 /* Info.plist */,
+				B5ED55BC66C0CFE90A300674 /* EarlGrey.swift */,
 			);
 			path = "📸";
 			sourceTree = "<group>";
@@ -495,6 +532,7 @@
 				E7B448732162107200538D25 /* Frameworks */,
 				E7B448742162107200538D25 /* Resources */,
 				75CB9B8F91E8BC6CF2D500B9 /* [CP] Embed Pods Frameworks */,
+				415B09C927748756FD4EF30D /* EarlGrey Copy Files */,
 			);
 			buildRules = (
 			);
@@ -571,9 +609,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7E820C02162338D002F2170 /* PF1.jpg in Resources */,
+				E7E820C12162338D002F2170 /* PF2.jpg in Resources */,
 				DB270C7A2113131E00EE2CDC /* LaunchScreen.storyboard in Resources */,
 				DB270C772113131E00EE2CDC /* Assets.xcassets in Resources */,
 				DBA7AD8221146BA900137296 /* DetailViewController.xib in Resources */,
+				E7E820BF21623358002F2170 /* PF3.jpg in Resources */,
 				DB270C752113131B00EE2CDC /* Main.storyboard in Resources */,
 				DB270C8A21133C5F00EE2CDC /* MovieCell.xib in Resources */,
 			);
@@ -616,6 +657,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E715F87D216230AE00EAD848 /* PF3.jpg in Resources */,
+				E715F87B2162303F00EAD848 /* PF2.jpg in Resources */,
+				E715F8792162302100EAD848 /* PF1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,10 +783,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-📸/Pods-📸-frameworks.sh",
+				"${PODS_ROOT}/EarlGrey/EarlGrey/EarlGrey.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EarlGrey.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -874,6 +920,7 @@
 			files = (
 				E7B448822162191100538D25 /* 📸.swift in Sources */,
 				E7B448832162191100538D25 /* 📷.swift in Sources */,
+				EBF5A372963D7FB1595345CF /* EarlGrey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

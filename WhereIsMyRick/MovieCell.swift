@@ -27,6 +27,11 @@ class MovieCell: UICollectionViewCell {
 
     func setup(with character: Movie) {
         name.text = character.title
-        Nuke.loadImage(with: character.poster, into: avatar)
+        switch character.poster {
+        case .image(let image):
+            avatar.image = image
+        case .url(let url):
+            Nuke.loadImage(with: url, into: avatar)
+        }
     }
 }

@@ -15,6 +15,7 @@
 import XCTest
 import FBSnapshotTestCase
 
+
 /// Class responsible for making snapshots of views
 class Snapshoter {
 
@@ -29,7 +30,6 @@ class Snapshoter {
 
     init(_ test: XCTestCase?) {
         self.test = test
-//        let testName = test.map { String(describing: $0.classForCoder) } ?? "undefined_test"
         guard let testClass = test?.testRunClass else { fatalError() }
         snapshotController = FBSnapshotTestController.init(test: testClass)
         snapshotController.recordMode = Snapshoter.isRecording
@@ -70,7 +70,7 @@ class Snapshoter {
             try snapshotController.compareSnapshot(ofViewOrLayer: view, selector: selector, identifier: identifier, tolerance: tolerance)
         } catch let error as NSError {
             if Snapshoter.isRecording {
-                print("Save in: \(snapshotController.referenceImagesDirectory)")
+                print("Save in: \(snapshotController.referenceImagesDirectory ?? "Nowhere?")")
                 print("Test ran in record mode. Reference image is now saved. Disable record mode to perform an actual snapshot comparison!")
             }
             XCTFail("❌ Snapshot comparison failed: \(String(describing: error))", file: file, line: line)

@@ -13,14 +13,24 @@
 // limitations under the License.
 
 import Foundation
+import UIKit
+enum Poster: Decodable {
 
+    init(from decoder: Decoder) throws {
+        let link = try decoder.singleValueContainer().decode(URL.self)
+        self = .url(link)
+    }
+
+    case url(URL)
+    case image(UIImage)
+}
 struct Movie: Decodable {
     enum CodingKeys: String, CodingKey {
         case title = "Title"
         case poster = "Poster"
     }
     let title: String
-    let poster: URL
+    let poster: Poster
 }
 
 struct Response: Decodable {
