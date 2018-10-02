@@ -79,19 +79,4 @@ private extension 📸 {
 
         waitForExpectations(timeout: duration+1)
     }
-
-
-//    func createMockMovies() -> [WhereIsMyRick.Movie] {
-//        let movies: [Movie] = [
-//            Movie(title: "Pulp Fiction", poster: Bundle.main.url(forResource: "PF1", withExtension: "jpg")!),
-//            Movie(title: "Pulp Fiction: The Facts", poster:  Bundle.main.url(forResource: "PF1", withExtension: "jpg")!),
-//            Movie(title: "\'Pulp Fiction\' on a Dime: A 10th Anniversary Retrospect", poster: Bundle.main.url(forResource: "PF2", withExtension: "jpg")!),
-//            Movie(title: "Pulp Fiction Art: Cheap Thrills & Painted Nightmares", poster:  Bundle.main.url(forResource: "PF2", withExtension: "jpg")!),
-//            Movie(title: "Pulp Fiction: The Golden Age of Storytelling", poster:  Bundle.main.url(forResource: "PF2", withExtension: "jpg")!),
-//            Movie(title: "Sex Academy 5: The Art of Pulp Fiction", poster:  Bundle.main.url(forResource: "PF3", withExtension: "jpg")!),
-//            Movie(title: "Ceské Pulp Fiction a Blair Witch", poster:  Bundle.main.url(forResource: "PF3", withExtension: "jpg")!),
-//            Movie(title: "Pulp Fiction Spoof: Vincent & Mia", poster:  Bundle.main.url(forResource: "PF3", withExtension: "jpg")!)
-//        ]
-//        return movies
-//    }
 }
