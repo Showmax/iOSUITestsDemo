@@ -1,7 +1,6 @@
 #!/bin/bash
 
 export currentDirectory="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source ../build_paths.sh
 source ${currentDirectory}/snapshot_environment.sh
 
 for i in "${IPAD_LANDSCAPE_SIMULATORS[@]}"
