@@ -30,7 +30,6 @@
 		88FFA0CE064A55F5F07960CE /* Pods_WhereIsMyRick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E965A7EB8226C21A9E7E4E /* Pods_WhereIsMyRick.framework */; };
 		8B27FEE6BE26D6EBEE77D7DE /* Pods_KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066651E80202DD901A60FF06 /* Pods_KIF.framework */; };
 		8D47D10890A121085E07E4C0 /* Pods__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5CA97F693BCCE81814B8A5 /* Pods__.framework */; };
-		CC478C1B1199FC0CDC7A1842 /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233B0BD9DA3E03442468B052 /* EarlGrey.framework */; };
 		DB0623752119AED800EC03C5 /* WhereIsMyRick.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DB270C702113131B00EE2CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C6F2113131B00EE2CDC /* AppDelegate.swift */; };
 		DB270C722113131B00EE2CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB270C712113131B00EE2CDC /* ViewController.swift */; };
@@ -75,7 +74,6 @@
 		E7E820BF21623358002F2170 /* PF3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E715F87C216230AE00EAD848 /* PF3.jpg */; };
 		E7E820C02162338D002F2170 /* PF1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E715F8782162302100EAD848 /* PF1.jpg */; };
 		E7E820C12162338D002F2170 /* PF2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E715F87A2162303F00EAD848 /* PF2.jpg */; };
-		EBF5A372963D7FB1595345CF /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED55BC66C0CFE90A300674 /* EarlGrey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,7 +163,6 @@
 		87D47431305C273E820A23C1 /* Pods-EarlGrey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlGrey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarlGrey/Pods-EarlGrey.debug.xcconfig"; sourceTree = "<group>"; };
 		95E965A7EB8226C21A9E7E4E /* Pods_WhereIsMyRick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhereIsMyRick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9882D0ACE99FD67D1306A557 /* Pods-KIF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIF/Pods-KIF.debug.xcconfig"; sourceTree = "<group>"; };
-		B5ED55BC66C0CFE90A300674 /* EarlGrey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		BE78FF695BAB298857D7E2F6 /* Pods-📸.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-📸.release.xcconfig"; path = "Pods/Target Support Files/Pods-📸/Pods-📸.release.xcconfig"; sourceTree = "<group>"; };
 		D82B4A4B9BACE3FF7B35ED91 /* Pods_Calabash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calabash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB270C6C2113131B00EE2CDC /* WhereIsMyRick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsMyRick.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,7 +251,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC478C1B1199FC0CDC7A1842 /* EarlGrey.framework in Frameworks */,
 				8D47D10890A121085E07E4C0 /* Pods__.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,7 +409,6 @@
 				E7B448812162191100538D25 /* 📷.swift */,
 				E7B448802162191100538D25 /* 📸.swift */,
 				E7B4487A2162107200538D25 /* Info.plist */,
-				B5ED55BC66C0CFE90A300674 /* EarlGrey.swift */,
 			);
 			path = "📸";
 			sourceTree = "<group>";
@@ -722,12 +717,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-📸/Pods-📸-frameworks.sh",
-				"${PODS_ROOT}/EarlGrey/EarlGrey/EarlGrey.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EarlGrey.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -915,7 +908,6 @@
 			files = (
 				E7B448822162191100538D25 /* 📸.swift in Sources */,
 				E7B448832162191100538D25 /* 📷.swift in Sources */,
-				EBF5A372963D7FB1595345CF /* EarlGrey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

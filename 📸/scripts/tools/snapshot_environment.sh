@@ -1,27 +1,29 @@
 #!bin/bash
 currentDirectory="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source ${currentDirectory}/../build_paths.sh
+
+#The main pathsoo
+export PROJECT_ROOT_DIR=${currentDirectory}/../../..
 
 # Devices used to test
 
 IPHONE_ARRAY=(
-    "iPhone SE"
-    "iPhone 6"
-    "iPhone 6 Plus"
-    "iPhone X"
+    "CI iPhone SE"
+    "CI iPhone 6"
+    "CI iPhone 6 Plus"
+    "CI iPhone X"
 )
 
 IPAD_ARRAY=(
-    "iPad Air 2"
-    "iPad Pro (10.5-inch)"
-    "iPad Pro (12.9-inch)"
+    "CI iPad Air 2"
+    "CI iPad Pro (10.5-inch)"
+    "CI iPad Pro (12.9-inch)"
 
 )
 
 IPAD_LANDSCAPE_ARRAY=(
-    "iPad Air 2 (Landscape)"
-    "iPad Pro (10.5-inch) (Landscape)"
-    "iPad Pro (12.9-inch) (Landscape)"
+    "CI iPad Air 2 (Landscape)"
+    "CI iPad Pro (10.5-inch) (Landscape)"
+    "CI iPad Pro (12.9-inch) (Landscape)"
 )
 
 IPHONE_DESTINATIONS=""

@@ -1,14 +1,14 @@
 #!/bin/bash
 
 export currentDirectory="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source ${currentDirectory}/snapshot_environment.sh
+source ${currentDirectory}/tools/snapshot_environment.sh
 
 cd $currentDirectory
 
 destinations=("${IPHONE_DESTINATIONS[@]} ${IPAD_DESTINATIONS[@]} ${IPAD_LANDSCAPE_DESTINATIONS[@]} ")
 
 # build project
-buildable="xcodebuild -workspace ${WORKSPACE_PATH}/showmax.xcworkspace -scheme iOSUITests build-for-testing -derivedDataPath 'build' $destinations"
+buildable="xcodebuild -workspace ${PROJECT_ROOT_DIR}/WhereIsMyRick.xcworkspace -scheme 📸 build-for-testing -derivedDataPath 'build' $destinations"
 eval $buildable
 
 if [ $? -ne 0 ]; then

@@ -23,5 +23,4 @@ end
 
 target '📸' do
     pod 'iOSSnapshotTestCase'
-    pod 'EarlGrey'
 end
